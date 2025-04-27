@@ -508,6 +508,19 @@
   <script defer src="assets/js/imagesloaded-pkgd.js"></script>
   <script defer src="assets/js/script.js"></script>
 
+
+  {{-- raw js  --}}
+
+  <script>
+    // You can optionally add JavaScript to format the date if needed
+    const dateInput = document.getElementById('date');
+    
+    dateInput.addEventListener('change', function() {
+      const selectedDate = this.value;
+      console.log('Selected Date:', selectedDate);
+      // You can format the date here if needed
+    });
+    </script>
   <!-- End Js File -->
 </body>
 

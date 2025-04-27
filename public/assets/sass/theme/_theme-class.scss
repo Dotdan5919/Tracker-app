@@ -1,0 +1,154 @@
+// Start Scroll To Top Here
+.scroll-up {
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 2px #2A9D8F;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 25px;
+	bottom: 35px;
+	height: 50px;
+	width: 50px;
+	transition: all 0.3s ease-in-out;
+
+	&::after {
+		position: absolute;
+		font-family: "Font Awesome 6 Pro";
+		content: "\f062";
+		text-align: center;
+		line-height: 50px;
+		font-weight: 700;
+		font-size: 18px;
+		color: #2A9D8F;
+		left: 0;
+		top: 0;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		transition: all 0.3s ease-in-out;
+	}
+
+	svg path {
+		fill: none;
+	}
+
+	svg.scroll-circle path {
+		stroke: #062E39;
+		stroke-width: 4px;
+		box-sizing: border-box;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+.scroll-up.active-scroll {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+// End Scroll To Top Here
+
+//  Start Text Align Here
+.trucker__align-center {
+	text-align: center;
+}
+
+.trucker__align-left {
+	text-align: left;
+}
+
+.trucker__align-right {
+	text-align: right;
+}
+
+// End Text Align Here
+
+// Start Title Style 1
+.trucker__title-wrapper {
+	.trucker__main-title {
+		font-size: 45px;
+		font-weight: 700;
+		color: #062E39;
+
+		@include trucker__screen-767 {
+			font-size: 30px;
+			line-height: 40px;
+
+			br {
+				display: none;
+			}
+		}
+
+		@include trucker__screen-439 {
+			font-size: 25px;
+			line-height: 35px;
+		}
+	}
+
+	.trucker__sub-titel {
+		color: #2A9D8F;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 30px;
+		margin-bottom: 34px;
+
+		@include trucker__screen-767 {
+			font-size: 18px;
+			line-height: 28px;
+			margin-bottom: 20px;
+
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+// End Title Style 1
+
+// Start Custom Range Bar
+.range-input {
+	width: 100%;
+	background: linear-gradient(to right, #062E39 70%, #FFFFFF 70%);
+	height: 6px;
+	border-radius: 10px;
+	appearance: none;
+	cursor: pointer;
+}
+
+.range-input::-webkit-slider-runnable-track {
+	height: 4px;
+	background: transparent;
+}
+
+.range-input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #062E39;
+	margin-top: -6px;
+	cursor: pointer;
+}
+
+.range-input::-moz-range-track {
+	height: 6px;
+	background: transparent;
+}
+
+.range-input::-moz-range-thumb {
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background: #062E39;
+	cursor: pointer;
+}
+
+
+// End Custom Range Bar

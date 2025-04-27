@@ -1,0 +1,316 @@
+// Start Team Member Information Area
+.trucker__team-member-info-area {
+    position: relative;
+    padding-top: 120px;
+
+    @include trucker__screen-991 {
+        padding-top: 90px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 70px;
+    }
+
+    .trucker__team-member-details {
+        width: 25%;
+
+        @include trucker__screen-1199 {
+            width: 45%;
+        }
+
+        @include trucker__screen-767 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            width: 60%;
+        }
+
+        @include trucker__screen-575 {
+            width: 80%;
+        }
+
+        @include trucker__screen-439 {
+            width: 100%;
+        }
+
+        .trucker__team-member-name {
+            @include trucker__screen-767 {
+                text-align: center;
+            }
+        }
+    }
+
+    .trucker__team-member-info-wrapper {
+        border-bottom: 1px solid #CCFF00;
+        padding-bottom: 60px;
+
+        @include trucker__screen-767 {
+            padding-bottom: 50px;
+        }
+
+        .trucker__team-member-info-inner {
+            display: flex;
+            align-items: center;
+            gap: 38px;
+            justify-content: start;
+
+            @include trucker__screen-767 {
+                display: block;
+            }
+
+            .trucker__team-member-img {
+                @include trucker__screen-767 {
+                    max-width: max-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            .trucker__team-member-more-info-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 26px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .trucker__team-member-regi-name {
+                    margin-left: 30px;
+                }
+            }
+
+            .trucker__team-member-name {
+                margin-bottom: 26px;
+            }
+
+            .trucker__team-member-social-media-wrapper {
+                margin-top: 44px;
+
+                @include trucker__screen-767 {
+                    text-align: center;
+                }
+
+                .trucker__blog-details-writer-icon {
+                    background-color: transparent;
+                    border-color: $trucker__green;
+
+                    &:hover {
+                        background-color: $trucker__green;
+                        color: $trucker__primary-color;
+                    }
+                }
+            }
+        }
+
+        .trucker__team-member-details-summary-title {
+            margin-top: 34px;
+            margin-bottom: 22px;
+        }
+    }
+}
+
+// End Team Member Information Area
+
+// Start Team Member Skill Area
+.trucker__team-member-skill-area {
+    position: relative;
+    padding-top: 76px;
+
+    @include trucker__screen-767 {
+        padding-top: 50px;
+    }
+
+    .trucker__team-memeber-skill-wrapper {
+        border-bottom: 1px solid #CCFF00;
+        padding-bottom: 82px;
+
+        @include trucker__screen-767 {
+            padding-bottom: 60px;
+        }
+
+        .trucker__team-member-skill-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+
+            @include trucker__screen-767 {
+                display: block;
+            }
+
+            .trucker__team-member-skill {
+                width: 40%;
+
+                @include trucker__screen-767 {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .trucker__team-member-skill-bar-wrapper {
+                    margin-top: 26px;
+
+                    .trucker__team-member-skill-bar-inner {
+                        margin-bottom: 34px;
+
+                        &:nth-child(1) {
+                            width: 85%;
+                        }
+
+                        &:nth-child(2) {
+                            width: 93%;
+                        }
+
+                        &:last-child {
+                            width: 72%;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .trucker__team-member-skill-name-persentege {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 18px;
+                    }
+
+                    .trucker__team-member-skill-bar {
+                        width: 100%;
+                        background-color: $trucker__green;
+                        height: 3px;
+                        display: block;
+                    }
+                }
+            }
+
+            .trucker__team-member-experience-wrapper {
+                width: 50%;
+
+                @include trucker__screen-767 {
+                    width: 100%;
+                }
+
+                .trucker__team-member-experience-inner {
+                    margin-top: 26px;
+
+                    .trucker__team-member-position-items {
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        margin-bottom: 25px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Team Member Skil Area
+
+// Start Team Member Education & Awards Area
+.trucker__team-member-edu-awards-area {
+    position: relative;
+    padding-bottom: 120px;
+    padding-top: 76px;
+
+    @include trucker__screen-991 {
+        padding-bottom: 90px;
+    }
+
+    @include trucker__screen-767 {
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+
+    .trucker__team-member-edu-awards-wrapper {
+        .trucker__team-member-edu-awards-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+
+            @include trucker__screen-767 {
+                display: block;
+            }
+
+            .trucker__team-memeber-edu-items {
+                width: 40%;
+
+                @include trucker__screen-767 {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .trucker__team-memeber-awards-items {
+                width: 50%;
+
+                @include trucker__screen-767 {
+                    width: 100%;
+                }
+
+                .trucker__team-member-position-items-wrapper {
+                    position: relative;
+                    margin-bottom: 26px;
+                    border-bottom: 1px solid #CCFF00;
+                    padding-bottom: 21px;
+                    position: relative;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                        padding-bottom: 21px;
+                    }
+
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        top: 0%;
+                        display: none;
+                        opacity: 0;
+                        position: absolute;
+                        transition: $trucker__transition;
+
+                        @include trucker__screen-439 {
+                            width: 70px;
+                            height: 85px;
+                            transform: translateX(45%);
+                            top: 45%;
+                        }
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 1;
+                            display: block;
+                        }
+                    }
+
+                    .trucker__team-member-position-items {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .trucker__team-member-edu-item {
+            margin-top: 26px;
+        }
+
+        .trucker__team-member-position-items {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// End Team Member Education & Awards Area

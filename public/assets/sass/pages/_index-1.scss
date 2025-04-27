@@ -1,0 +1,1654 @@
+// Start Brand Area
+.trucker__brand-area-home-1 {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    .trucker__brand-item {
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// End Brand Area
+
+// Start Map Area
+.trucker__map-area-home-1 {
+    .trucker__map-wrapper {
+        position: relative;
+
+        .trucker__office-map {
+            width: 100%;
+            height: 655px;
+
+            @include trucker__screen-767 {
+                height: 1050px;
+            }
+        }
+
+        .trucker__office-location-text-wrapper {
+            background: rgba(6, 46, 57, 0.80);
+            padding-top: 46px;
+            padding-bottom: 50px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+
+            .trucker__office-location-text-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @include trucker__screen-767 {
+                    justify-content: center;
+                    gap: 60px;
+                    flex-wrap: wrap;
+                    row-gap: 30px;
+                }
+
+                .trucker__office-location-item {
+                    .trucker__office-location-title {
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: -3px;
+                            width: 60px;
+                            height: 2px;
+                            background-color: $trucker__green;
+                        }
+                    }
+
+                    .trucker__branch-wrapper {
+                        margin-top: 32px;
+
+                        .trucker__branch-map,
+                        .trucker__branch-info {
+                            display: flex;
+                            align-items: start;
+                            gap: 20px;
+                            margin-bottom: 15px;
+
+                            &.trucker__branch-info {
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            .trucker__branch-map-icon {
+                                color: $trucker__green;
+                            }
+
+                            .trucker__branch-number {
+                                a {
+                                    display: block;
+                                    transition: $trucker__transition;
+
+                                    &:hover {
+                                        color: $trucker__green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Map Area
+
+// Start Blog Area
+.trucker__blog-area-home-1 {
+    position: relative;
+    padding: 130px 0;
+
+    @include trucker__screen-991 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .trucker__blog-inner {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 65px;
+
+        @include trucker__screen-1199 {
+            display: block;
+        }
+
+        .trucker__blog-left-items {
+            .trucker__blog-left-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+
+                    @include trucker__screen-767 {
+                        display: flex;
+                        flex-direction: column-reverse;
+
+                        img {
+                            order: 1;
+                        }
+                    }
+                }
+
+                @include trucker__screen-767 {
+                    display: block;
+                }
+
+                img {
+                    width: 50%;
+
+                    @include trucker__screen-1199 {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    @include trucker__screen-767 {
+                        width: unset;
+                    }
+                }
+
+                .trucker__blog-info-box {
+                    width: 50%;
+                    padding: 45.5px 30px;
+
+                    @include trucker__screen-1199 {
+                        width: 70%;
+                        margin: 0 auto;
+                        padding: 62px 30px;
+                    }
+
+                    @include trucker__screen-865 {
+                        padding: 40px 30px;
+                    }
+
+                    @include trucker__screen-767 {
+                        width: 100%;
+                    }
+
+                    @include trucker__screen-575 {
+                        padding: 40px 20px;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .trucker__blog-right-item {
+            @include trucker__screen-1299 {
+                width: 36%;
+            }
+
+            @include trucker__screen-1199 {
+                display: flex;
+                align-items: center;
+                width: unset;
+                margin-top: 30px;
+            }
+
+            @include trucker__screen-767 {
+                display: block;
+                width: 100%;
+            }
+
+            img {
+                @include trucker__screen-1199 {
+                    width: unset;
+                }
+
+                @include trucker__screen-767 {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        .trucker__blog-info-box {
+            background: $trucker__primary-color;
+            box-shadow: 0px 5px 50px 0px rgba(234, 234, 234, 0.70);
+            padding: 20px 30px;
+
+            @include trucker__screen-1199 {
+                padding: 50px 30px;
+            }
+
+            @include trucker__screen-1099 {
+                padding: 25px 30px;
+            }
+
+            @include trucker__screen-439 {
+                padding: 25px 20px;
+            }
+
+            .trucker__blog-publish-date {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 16px;
+            }
+
+            .trucker__blog-title {
+                a {
+                    transition: $trucker__transition;
+
+                    &:hover {
+                        color: $trucker__green;
+                    }
+                }
+            }
+
+            .trucker__blog-btn {
+                position: relative;
+                color: $trucker__green;
+                margin-top: 25px;
+                display: inline-block;
+                padding-right: 30px;
+
+                i {
+                    position: absolute;
+                    top: 54%;
+                    right: 2px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .trucker__blog-peragraph {
+                margin-top: 20px;
+
+                @include trucker__screen-1299 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Blog Area
+
+// Start Testimonial Area
+.trucker__testimonial-area-home-1 {
+    background-color: #F8FBFB;
+    padding: 130px 0;
+
+    @include trucker__screen-991 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .trucker__testimonial-inner {
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include trucker__screen-767 {
+            margin-top: 40px;
+        }
+
+        .trucker__testimonial-item {
+            border-radius: 3px;
+            border: 1px solid #2A9D8F;
+            background: #FFF;
+            padding: 25px 25px 40px 25px;
+
+            @include trucker__screen-390 {
+                padding: 20px;
+            }
+
+            .trucker__client-comment {
+                @include trucker__screen-767 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .trucker__client-info {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                margin-top: 25px;
+
+                .trucker__client-picture {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                }
+
+                .trucker__client-name {
+                    @include trucker__screen-390 {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Testimonial Area
+
+// Start Pricing Area
+.trucker__pricing-area-home-1 {
+    position: relative;
+    padding: 130px 0;
+
+    @include trucker__screen-991 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .trucker__pricing-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 65px;
+
+        @include trucker__screen-991 {
+            flex-wrap: wrap;
+        }
+
+        .trucker__pricing-itme {
+            position: relative;
+            filter: drop-shadow(0px 0px 45px rgba(6, 2, 2, 0.10));
+            border-radius: 15px;
+            background: #FFF;
+            padding: 15px 15px 38px 15px;
+
+            .trucker__pricng-title {
+                text-align: center;
+                margin-top: 8px;
+            }
+
+            .trucker__price {
+                position: relative;
+                text-align: center;
+                margin-top: 12px;
+
+                .trucker__item-date {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .trucker__price-plan-option-wrapper {
+                max-width: max-content;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 24px;
+
+                .trucker__price-plan-option {
+                    margin-bottom: 12px;
+
+                    &:last-child {
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+
+            .trucker__pricing-btn {
+                text-align: center;
+                margin-top: 25px;
+
+                .trucker__item-order-btn {
+                    display: inline-block;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    background-color: $trucker__secondary-color;
+
+                    &:hover {
+                        background-color: $trucker__green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Pricing Area
+
+// Start Faq Area
+.trucker__faq-area-home-1 {
+    position: relative;
+
+    .trucker__faq-wrapper {
+        display: flex;
+
+        @media (max-width:1710px) {
+            align-items: center;
+        }
+
+        @include trucker__screen-1399 {
+            display: block;
+        }
+
+        .trucker__faq-left {
+            background: rgba(42, 157, 143, 0.08);
+            width: 83%;
+            padding-top: 96px;
+            padding-bottom: 80px;
+
+            @media (max-width:1920px) {
+                width: 50%;
+            }
+
+            @include trucker__screen-1399 {
+                width: 100%;
+            }
+
+            @include trucker__screen-767 {
+                padding-top: 50px;
+            }
+
+            .trucker__faq-inner {
+                margin-top: 66px;
+
+                @include trucker__screen-767 {
+                    margin-top: 40px;
+                }
+            }
+
+            .trucker__faq-left-wrapper {
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+
+                @media (max-width:1710px) {
+                    width: 90%;
+                }
+
+                .trucker__faq-title {
+                    h2 {
+                        @include trucker__screen-767 {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+
+                        @include trucker__screen-575 {
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .trucker__faq-right {
+            width: 50%;
+            position: relative;
+
+            @include trucker__screen-1399 {
+                width: 100%;
+            }
+
+            .trucker__faq-contact {
+                position: absolute;
+                background-color: $trucker__green;
+                width: 537px;
+                padding-top: 54px;
+                right: 0;
+                top: 0;
+                padding-bottom: 51px;
+
+                @include trucker__screen-575 {
+                    width: 300px;
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                }
+
+                .trucker__faq-phone-number,
+                .trucker__support-text {
+                    text-align: center;
+                    display: block;
+
+                    &.trucker__faq-phone-number {
+                        margin-top: 12px;
+                    }
+                }
+
+                .trucker__faq-icon {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 15px;
+                }
+
+                .trucker__faq-send-btn-wrapper {
+                    text-align: center;
+                    margin-top: 20px;
+
+                    .trucker__faq-send-btn {
+                        background-color: $trucker__primary-color;
+                        color: $trucker__secondary-color;
+                        display: inline-block;
+                        padding: 18px 37px 18px 28px;
+
+                        &:hover {
+                            background-color: $trucker__secondary-color;
+                            color: $trucker__primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Faq Area
+
+// Start Work Systm
+.trucker__work-system-home-1 {
+    position: relative;
+    padding-bottom: 130px;
+
+    @include trucker__screen-991 {
+        padding-bottom: 100px;
+    }
+
+    @include trucker__screen-767 {
+        padding-bottom: 80px;
+    }
+
+    .trucker__work-system-main-wrapper {
+        position: relative;
+        z-index: 1;
+
+        .trucker__work-system-shep {
+            position: absolute;
+            top: 25%;
+            z-index: -1;
+            transform: translateY(-50%);
+
+            @include trucker__screen-1099 {
+                top: 50%;
+            }
+        }
+    }
+
+    .trucker__work-system-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 65px;
+
+        @include trucker__screen-767 {
+            margin-top: 40px;
+        }
+
+        @include trucker__screen-1099 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 40px;
+            row-gap: 20px;
+            justify-content: center;
+        }
+
+        @include trucker__screen-575 {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
+        .trucker__work-system-item {
+            text-align: center;
+
+            &:hover {
+                cursor: pointer;
+
+                .trucker__work-system-icon-box {
+                    background-color: $trucker__green;
+                    transform: rotateY(360deg);
+
+                    img {
+                        filter: invert(116%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(200%) contrast(158%);
+                    }
+                }
+
+                .trucker__work-system-title {
+                    a {
+                        color: $trucker__green;
+                    }
+                }
+            }
+
+            .trucker__work-system-icon-box {
+                width: 143px;
+                height: 143px;
+                background-color: #FFF;
+                border-radius: 10px;
+                filter: drop-shadow(0px 0px 45px rgba(6, 2, 2, 0.1));
+                line-height: 143px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                transition: linear 0.3s;
+
+                img {
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .trucker__work-system-title {
+                margin-top: 26px;
+
+                a {
+                    transition: $trucker__transition;
+                }
+            }
+
+            .trucker__work-system-peragraph {
+                margin-top: 11px;
+
+                @include trucker__screen-1099 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Work System
+
+// Start Team Area
+.trucker__team-area-home-1 {
+    position: relative;
+    padding-top: 130px;
+
+    &.trucker__team-area-inner-page {
+        padding-bottom: 130px;
+
+        @include trucker__screen-991 {
+            padding-bottom: 100px;
+        }
+
+        @include trucker__screen-767 {
+            padding-bottom: 80px;
+        }
+
+        .trucker__team-inner {
+            &:last-child {
+                margin-top: 24px;
+            }
+        }
+    }
+
+    &.trucker__team-area-inner-about-page {
+        padding-bottom: 130px;
+
+        @include trucker__screen-991 {
+            padding-bottom: 100px;
+        }
+
+        @include trucker__screen-767 {
+            padding-bottom: 80px;
+        }
+    }
+
+    @include trucker__screen-991 {
+        padding-top: 100px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 80px;
+    }
+
+    .trucker__team-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 65px;
+
+        @include trucker__screen-767 {
+            margin-top: 40px;
+        }
+
+        @include trucker__screen-1199 {
+            flex-wrap: wrap;
+        }
+
+        .trucker__team-item {
+            .trucker__team-picture-wrapper {
+                padding-left: 63px;
+                background-color: $trucker__primary-color;
+                box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.10);
+            }
+
+            .trucker__team-info {
+                padding-left: 63px;
+                background-color: $trucker__primary-color;
+                box-shadow: 16px 20px 45px 0px rgba(0, 0, 0, 0.1);
+                padding-top: 25px;
+                padding-bottom: 25px;
+                padding-right: 37px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+
+                &:hover {
+                    .trucker__team-social-media-wrapper {
+                        opacity: 1;
+                    }
+
+                    .trucker__team-member-name {
+                        a {
+                            color: $trucker__green;
+                        }
+                    }
+                }
+
+                .trucker__team-member-name {
+                    a {
+                        transition: $trucker__transition;
+
+                        @include trucker__screen-439 {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+
+                .trucker__team-member-social-media-share-btn {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 45px;
+                    display: inline-block;
+                    text-align: center;
+                    background-color: $trucker__secondary-color;
+                    line-height: 45px;
+                    border-radius: 50%;
+                    border: 4px solid $trucker__green;
+                    color: $trucker__primary-color;
+                }
+
+                .trucker__team-social-media-wrapper {
+                    position: absolute;
+                    top: -175px;
+                    right: 45px;
+                    opacity: 0;
+                    transition: 0.6s ease-in;
+
+                    ul {
+                        background-color: $trucker__green;
+                        width: 40px;
+
+                        li {
+                            text-align: center;
+                            padding: 7px 0px;
+
+                            a {
+                                color: $trucker__primary-color;
+                                transition: $trucker__transition;
+
+                                &:hover {
+                                    color: $trucker__secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.trucker__team-item-mid {
+                .trucker__team-info {
+                    box-shadow: -9px -20px 45px 0px rgba(0, 0, 0, 0.1);
+
+                    .trucker__team-social-media-wrapper {
+                        top: 135px;
+                    }
+                }
+
+                .trucker__team-picture-wrapper {
+                    box-shadow: 19px 20px 45px 0px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+
+// End Team Area
+
+// Star Transport System Area
+.trucker__transport-system-home-1 {
+    position: relative;
+    padding-bottom: 130px;
+    padding-top: 30px;
+
+    @include trucker__screen-991 {
+        padding-bottom: 100px;
+    }
+
+    @include trucker__screen-767 {
+        padding-bottom: 80px;
+        padding-top: 20px;
+    }
+
+    .trucker__transport-system-inner {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-top: 65px;
+        justify-content: center;
+
+        @include trucker__screen-767 {
+            margin-top: 40px;
+        }
+
+        @include trucker__screen-1299 {
+            flex-wrap: wrap;
+        }
+
+        .trucker__transport-system-item {
+            position: relative;
+            filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.10));
+            z-index: 1;
+
+            &:hover {
+                .trucker__transport-system-item-text-box {
+                    img {
+                        &.trucker__transport-shep-hover {
+                            opacity: 1;
+                        }
+
+                        &.trucker__transport-shep {
+                            opacity: 0;
+                        }
+                    }
+
+                    .trucker__transport-system-item-text-info {
+                        .trucker__transport-system-title {
+                            color: $trucker__primary-color;
+                        }
+
+                        .trucker__transport-system-peragraph {
+                            color: $trucker__primary-color;
+                        }
+                    }
+
+                    .trucker__transport-system-icon {
+                        background-color: $trucker__primary-color;
+
+                        svg {
+                            path {
+                                fill: $trucker__green;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .trucker__transport-system-item-text-box {
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    @include trucker__screen-439 {
+                        width: 100%;
+                        height: 160px;
+                    }
+
+                    &.trucker__transport-shep-hover {
+                        opacity: 0;
+                        transition: 0.3s;
+                    }
+
+                    &.trucker__transport-shep {
+                        opacity: 1;
+                        transition: 0.3s;
+                    }
+                }
+
+                .trucker__transport-system-item-text-info {
+                    position: absolute;
+                    top: 24px;
+                    left: 26px;
+                    z-index: 1;
+
+                    @include trucker__screen-439 {
+                        width: 100%;
+                    }
+
+                    .trucker__transport-system-title {
+                        margin-bottom: 6px;
+                        transition: $trucker__transition;
+                    }
+
+                    .trucker__transport-system-peragraph {
+                        transition: $trucker__transition;
+                    }
+                }
+
+                .trucker__transport-system-icon {
+                    width: 70px;
+                    height: 70px;
+                    line-height: 70px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    text-align: center;
+                    background-color: $trucker__secondary-color;
+                    position: absolute;
+                    right: -108px;
+                    top: 85%;
+                    transition: $trucker__transition;
+
+                    @include trucker__screen-439 {
+                        right: 10%;
+                    }
+
+                    svg {
+                        path {
+                            transition: $trucker__transition;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// End Transport System Area
+
+// Start Booking System Area
+.trucker__booking-system-area {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 124px;
+    padding-top: 120px;
+
+    .trucker__booking-system-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include trucker__screen-1199 {
+            display: block;
+        }
+
+        .trucker__booking-info {
+            @include trucker__screen-1199 {
+                margin-bottom: 45px;
+            }
+
+            .trucker__booking-sub-title {
+                margin-bottom: 77px;
+            }
+
+            .trucker__booking-title {
+                @include trucker__screen-575 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+            }
+
+            .trucker__booking-peragraph {
+                margin-top: 32px;
+
+                @include trucker__screen-650 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+
+            .trucker__booking-faselity {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 16px;
+                margin-top: 43px;
+
+                @include trucker__screen-650 {
+                    grid-template-columns: 1fr;
+                }
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+
+                    .trucker__booking-faselity-icon {
+                        width: 22px;
+                        height: 22px;
+                        line-height: 22px;
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 50%;
+                        background-color: $trucker__green;
+                        color: $trucker__primary-color;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .trucker__application-download-btn {
+                margin-top: 64px;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+        }
+
+        .trucker__booking-form {
+            background-color: $trucker__green;
+            padding: 43px 53px 58px 53px;
+            box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.10);
+            border-radius: 5px;
+
+            label {
+                display: block;
+                margin-bottom: 7px;
+            }
+
+            .trucker__booking-form-full-width-input-field,
+            .trucker__booking-from-colums-input-field {
+                input {
+                    height: 48px;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: $trucker__primary-color;
+                    padding: 0 10px;
+                }
+            }
+
+            .trucker__booking-form-full-width-input-field {
+                input {
+                    width: 100%;
+                }
+            }
+
+            .trucker__booking-from-colums-input-field {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-top: 14px;
+
+                @include trucker__screen-575 {
+                    display: block;
+                }
+
+                .trucker__booking-from-colums-input-item {
+                    width: 50%;
+
+                    @include trucker__screen-575 {
+                        width: 100%;
+                    }
+
+                    &:last-child {
+                        @include trucker__screen-575 {
+                            margin-top: 14px;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .trucker__booking-select-box-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                justify-content: center;
+
+                @include trucker__screen-439 {
+                    display: block;
+                    margin-top: 14px;
+                }
+
+                .trucker__booking-select-box-item {
+                    width: 50% !important;
+
+                    @include trucker__screen-439 {
+                        width: 100% !important;
+                    }
+
+                    &:last-child {
+                        @include trucker__screen-439 {
+                            margin-top: 14px;
+                        }
+                    }
+
+                    .trucker__booking-system-select-title {
+                        display: block;
+                        margin-bottom: 7px;
+                    }
+
+                    .trucker__booking-type-one,
+                    .trucker__booking-type-two {
+                        float: unset;
+                        border-radius: 3px;
+
+                        &.nice-select {
+                            &::after {
+                                width: 10px;
+                                height: 10px;
+                                border-bottom: 1px solid #747474;
+                                border-right: 1px solid #747474;
+                                margin-top: -7px;
+                            }
+
+                            &.open {
+                                .list {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .trucker__booking-system-select-title {
+                    display: block;
+                }
+            }
+
+            .trucker__booking-submit-btn {
+                display: block;
+                margin-top: 32px;
+
+                .trucker__booking-submit-button {
+                    display: inline-block;
+                    background-color: $trucker__primary-color;
+                    color: $trucker__secondary-color;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: $trucker__primary-font;
+                    padding: 18px 28px 18px 28px;
+
+                    &:hover {
+                        background-color: $trucker__secondary-color;
+                        color: $trucker__primary-color;
+                    }
+                }
+            }
+
+            .trucker__range-bar {
+                margin-top: 23px;
+
+                .range-label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+    }
+
+    .trucker__booking-form {
+        .nav-pills {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 45px;
+
+            &::after {
+                background-color: $trucker__primary-color;
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 2px;
+                width: 100%;
+                height: 2px;
+                z-index: -1;
+            }
+        }
+
+        button {
+            background-color: transparent;
+
+            &.nav-link {
+                border-radius: unset;
+                font-size: 12px;
+                font-weight: 400;
+                color: $trucker__primary-color;
+                line-height: 22px;
+
+                &.active {
+                    background-color: $trucker__secondary-color;
+                    border-bottom: 1px solid $trucker__secondary-color ;
+                }
+            }
+
+            .trucker__booking-system-tab-btn-icon {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+// End Booking System Area
+
+// Start Counter Banner Area
+.trucker__counter-area-home-1 {
+    position: relative;
+
+    .trucker__banner-counter-home-1-wrapper {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-bottom: 215px;
+        padding-top: 150px;
+
+        @include trucker__screen-767 {
+            padding-top: 80px;
+            padding-bottom: 130px;
+        }
+
+        .trucker__counter-banner-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include trucker__screen-650 {
+                display: block;
+            }
+
+            .trucker__counter-banner-info {
+                @include trucker__screen-650 {
+                    margin-bottom: 30px;
+                }
+
+                .trucker__counter-banner-title-area {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    @include trucker__screen-439 {
+                        display: block;
+
+                    }
+
+                    .trucker__counter-banner-title {
+                        @include trucker__screen-767 {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+
+                        @include trucker__screen-439 {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                .trukcer__counter-banner-peragraph {
+                    margin-top: 20px;
+
+                    @include trucker__screen-767 {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .trucker__counter-banner-contact-info {
+                    margin-top: 28px;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+
+                        &:hover {
+                            .trucker__counter-banner-contact-number {
+                                color: $trucker__secondary-color;
+                            }
+
+                            .trucker__counter-banner-contact-icon {
+                                background-color: $trucker__secondary-color;
+                            }
+                        }
+
+                        .trucker__counter-banner-contact-icon {
+                            width: 45px;
+                            height: 45px;
+                            line-height: 45px;
+                            display: inline-block;
+                            text-align: center;
+                            border-radius: 3px;
+                            background-color: $trucker__green;
+                            transition: $trucker__transition;
+                        }
+
+                        .trucker__counter-banner-contact-number {
+                            transition: $trucker__transition;
+                        }
+                    }
+                }
+            }
+
+            .trucker__counter-play-button {
+                .trucker__counter-banner-btn {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    line-height: 120px;
+                    display: inline-block;
+                    text-align: center;
+                    border: 2px solid $trucker__primary-color;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $trucker__primary-color;
+                    text-transform: uppercase;
+                    transition: $trucker__transition;
+
+                    &:hover {
+                        border-color: $trucker__green;
+                        color: $trucker__green;
+                    }
+                }
+            }
+        }
+    }
+
+    .trucker__counter-wrapper-home-1 {
+        position: relative;
+        top: -100px;
+
+        .trucker__counter-items {
+            padding-top: 40px;
+            padding-bottom: 50px;
+            background-color: $trucker__primary-color;
+            filter: drop-shadow(0px 7px 23px rgba(0, 0, 0, 0.09));
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+            position: relative;
+            background-color: #FFF;
+            fill: #fff;
+            z-index: 1;
+
+            @include trucker__screen-865 {
+                flex-wrap: wrap;
+                row-gap: 25px;
+            }
+
+            .trucker__counter-item {
+                width: 25%;
+                position: relative;
+
+                @include trucker__screen-865 {
+                    width: 50%;
+                }
+
+                @include trucker__screen-575 {
+                    width: 100%;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &:nth-child(even) {
+                    &::after {
+                        @include trucker__screen-865 {
+                            display: none;
+                        }
+                    }
+                }
+
+                .trucker__counter-item-shep-1 {
+                    width: 33px;
+                    height: 33px;
+                    background-color: #f23b3b59;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: 68%;
+                    z-index: -1;
+                    animation: trucker__bounceX 4s linear infinite;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background-color: #38363626;
+                    width: 1px;
+                    height: 100%;
+
+                    @include trucker__screen-575 {
+                        display: none;
+                    }
+                }
+            }
+
+            .trucker__counter-shep-1 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                opacity: 0.4;
+            }
+
+            .trucker__counter-shep-2 {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                opacity: 0.4;
+            }
+
+            .trucker__counter-item-number-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .trucker__counter-item-number {
+                    overflow: hidden;
+                    padding-right: 6px;
+                }
+
+            }
+
+            .trucker__counter-item-name {
+                text-align: center;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+// End Counter Banner Area
+
+// Start About Area
+.trucker__about-area-home-1 {
+    position: relative;
+    padding: 100px 0 108px 0;
+
+    @include trucker__screen-991 {
+        padding: 70px 0 78px 0;
+    }
+
+    @include trucker__screen-767 {
+        padding: 50px 0 58px 0;
+    }
+
+    .trucker__about-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        @include trucker__screen-991 {
+            display: block;
+        }
+
+        .trucker__about-left-site {
+            @include trucker__screen-991 {
+                margin-bottom: 35px;
+                max-width: max-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .trucker__about-right-site {
+            @include trucker__screen-991 {
+                text-align: center;
+            }
+        }
+
+        .trucker__about-some-info-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+            margin-left: -10px;
+            margin-top: 22px;
+            margin-bottom: 4px;
+
+            @include trucker__screen-991 {
+                margin-left: 0;
+                justify-content: center;
+            }
+
+            @include trucker__screen-575 {
+                display: block;
+            }
+
+            .trucker__about-some-info-item {
+                display: flex;
+                align-items: center;
+
+                .trucker__about-some-info-title {
+                    @include trucker__screen-991 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .trucker__about-title {
+            margin-bottom: 17px;
+        }
+
+        .trucker__about-sub-titel {
+            @include trucker__screen-1099 {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .trucker__about-info-point {
+            margin-bottom: 30px;
+
+            @include trucker__screen-991 {
+                max-width: max-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .trucker__about-info-point-icon {
+                    width: 22px;
+                    height: 22px;
+                    line-height: 22px;
+                    display: inline-block;
+                    text-align: center;
+                    background-color: $trucker__green;
+                    border-radius: 50%;
+                    color: $trucker__primary-color;
+                    font-size: 13px;
+                }
+
+                .trucker__about-info-point-text {
+                    @include trucker__screen-991 {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .trucker__about-writer-info-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 65px;
+
+            @include trucker__screen-991 {
+                justify-content: center;
+            }
+
+            @include trucker__screen-575 {
+                display: block;
+            }
+
+            .trucker__about-writer-info-name {
+                margin-bottom: 4px;
+            }
+
+            .trucker__about-writer-info-inner {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+
+            }
+        }
+    }
+}
+
+// End About Area

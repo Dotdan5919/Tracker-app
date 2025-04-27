@@ -1,0 +1,116 @@
+/* Author CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: $trucker__primary-font;
+  color: $trucker__secondary-color;
+  overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: $trucker__primary-font;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+a,
+article,
+aside,
+span,
+li,
+button,
+input,
+textarea {
+  text-wrap: auto;
+  list-style-type: none;
+}
+
+p,
+a,
+article,
+aside,
+span,
+li,
+a,
+button,
+input,
+textarea {
+  font-family: $trucker__primary-font;
+}
+
+// Start Custom Container
+.trucker__container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// End Custom Container

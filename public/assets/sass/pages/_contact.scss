@@ -1,0 +1,185 @@
+// Start All Contact Info Area
+.trucker__all-contact-area {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 110px;
+
+    @include trucker__screen-991 {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    .trucker__all-contact-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include trucker__screen-1199 {
+            flex-wrap: wrap;
+            row-gap: 30px;
+            column-gap: 50px;
+            justify-content: center;
+        }
+
+        .trucker__all-contact-item {
+            text-align: center;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 27px;
+            }
+
+            .trucker__all-contact-title {
+                margin-bottom: 20px;
+            }
+
+            .trucker__contact-text {
+                display: block;
+                transition: $trucker__transition;
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    color: $trucker__green;
+
+                }
+            }
+
+            .trucker__contact-text-day {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            .trucker__contact-text-time {
+                margin-left: 46px;
+            }
+
+            .trucker__contact-text-adress {
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+// End All Contact Info Area
+
+// Start Contact Form Area
+.trucker__contact-form-area {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #F7F8FD;
+
+    @include trucker__screen-991 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .trucker__contact-form-inner {
+        margin-top: 62px;
+
+        @include trucker__screen-767 {
+            margin-top: 45px;
+        }
+
+        .trucker__input-flexing {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            @include trucker__screen-767 {
+                display: block;
+            }
+
+            .trucker__input-flexing-item {
+                width: 100%;
+
+                .trucker__input-field-name {
+                    @include trucker__screen-767 {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #DDD;
+            padding: 15.5px 17px;
+            transition: $trucker__transition;
+
+            &:focus {
+                border-color: $trucker__green;
+            }
+
+            &::placeholder {
+                color: #646464;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                font-family: $trucker__jost-font;
+            }
+        }
+
+        .trucker__input-field-name {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        .trucker__input-form-submit {
+            margin-top: 40px;
+        }
+
+        button {
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            padding: 16px 41px 16px 41px;
+
+            i {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// End Contact Form Area
+
+// Start Map Area
+.trucker__office-map-area {
+    .trucker__contact-map {
+        width: 100%;
+        height: 654px;
+
+        @include trucker__screen-767 {
+            height: 350px;
+        }
+    }
+}
+
+// End Map Area

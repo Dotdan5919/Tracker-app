@@ -1,0 +1,568 @@
+// Start Blog Details Area
+.trucker__blog-details-area {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include trucker__screen-991 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+}
+
+.trucker__blog-details-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+
+    @include trucker__screen-991 {
+        display: block;
+    }
+
+    .trucker__fast-box-icon-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 26px;
+
+        @include trucker__screen-575 {
+            margin-bottom: 12px;
+        }
+
+        .trucker__fast-box-icon-inner {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+}
+
+.trucker__fast-box-blog-details {
+    .trucker__fast-box-title {
+        margin-top: 32px;
+        margin-bottom: 20px;
+
+        &.trucker__fast-box-title-blog-standard {
+            margin-top: 22px;
+        }
+
+        @include trucker__screen-575 {
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+}
+
+.trucker__blog-details-left-site {
+    width: 65%;
+
+    @include trucker__screen-991 {
+        width: 100%;
+    }
+}
+
+.trucker__second-box-blog-details {
+    margin-top: 38px;
+
+    .trucker__second-box-title {
+        margin-top: 36px;
+        margin-bottom: 14px;
+    }
+}
+
+.trucker__second-box-img-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include trucker__screen-1299 {
+        gap: 15px;
+    }
+
+    @include trucker__screen-1099 {
+        display: block;
+    }
+
+    .trucker__second-box-img-responsive {
+        display: none;
+
+        @include trucker__screen-1099 {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    .trucker__second-box-img-desktop {
+        display: block;
+
+        @include trucker__screen-1099 {
+            display: none;
+        }
+    }
+
+    .trucker__second-box-link-inner {
+        @include trucker__screen-1299 {
+            width: 65%;
+        }
+
+        @include trucker__screen-1099 {
+            width: 100%;
+        }
+    }
+
+    .trucker__second-box-link {
+        display: block;
+        position: relative;
+        margin-bottom: 23px;
+        transition: $trucker__transition;
+
+        @include trucker__screen-1299 {
+            font-size: 16px;
+            line-height: 26px;
+
+            svg {
+                width: 20px;
+            }
+        }
+
+        &.trucker__second-box-link-no-hover {
+            &:hover {
+                color: $trucker__secondary-color;
+            }
+        }
+
+        &:hover {
+            color: $trucker__green;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .trucker__second-box-link-icon {
+            position: relative;
+            top: -1px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.trucker__second-box-two-img-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+
+    @include trucker__screen-1299 {
+        gap: 15px;
+    }
+
+    img {
+        @include trucker__screen-1299 {
+            width: 45%;
+        }
+    }
+}
+
+.trucker__third-box-blog-details {
+    .trucker__third-box-wrapper {
+        &:last-child {
+            margin-top: 30px;
+            margin-bottom: 38px;
+        }
+
+        .trucker__third-box-title {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.trucker__blog-details-tag-line-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 40px 0;
+
+    @include trucker__screen-1099 {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .trucker__blog-details-tag-line-inner {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include trucker__screen-575 {
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .trucker__blog-details-tag-line-button-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include trucker__screen-575 {
+            flex-wrap: wrap;
+        }
+
+        a {
+            padding: 9px 21px;
+            background-color: #F8F8F8;
+            transition: $trucker__transition;
+
+            &:hover {
+                background-color: $trucker__green;
+                color: $trucker__primary-color;
+            }
+        }
+    }
+}
+
+.trucker__blog-details-tag-line-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.trucker__blog-details-tag-line-icon,
+.trucker__blog-details-writer-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $trucker__primary-color;
+    color: $trucker__green;
+    border: 1px solid $trucker__green;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: $trucker__transition;
+
+    &:hover {
+        background-color: $trucker__green;
+        border-color: transparent;
+        color: $trucker__primary-color;
+    }
+
+    &.trucker__blog-details-writer-icon {
+        width: 45px;
+        height: 45px;
+        background-color: #F8FAFA;
+        border-color: #E7E7E7;
+        line-height: 45px;
+
+        &:hover {
+            background-color: $trucker__green;
+            border-color: transparent;
+            color: $trucker__primary-color;
+        }
+    }
+}
+
+.trucker__blog-details-about-writer {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    border-bottom: 1px solid #E3E3E3;
+    padding-top: 46px;
+    padding-bottom: 27px;
+
+    @include trucker__screen-1299 {
+        gap: 20px;
+    }
+
+    @include trucker__screen-767 {
+        align-items: start;
+    }
+
+    @include trucker__screen-439 {
+        display: block;
+    }
+
+    .trucker__blog-details-about-writer-img {
+        width: 50%;
+
+        @include trucker__screen-1199 {
+            width: 70%;
+        }
+
+        @include trucker__screen-991 {
+            width: 100%;
+            max-width: max-content;
+        }
+
+        @include trucker__screen-767 {
+            width: 100%;
+        }
+    }
+
+    .trucker__blog-writer-discription {
+        margin-top: 17px;
+        margin-bottom: 37px;
+
+        @include trucker__screen-767 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.trucker__blog-details-next-prev-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 42px;
+    margin-bottom: 45px;
+
+    @include trucker__screen-1099 {
+        display: block;
+    }
+
+    @include trucker__screen-991 {
+        display: flex;
+    }
+
+    @include trucker__screen-767 {
+        display: block;
+    }
+
+    .trucker__blog-details-prev-inner,
+    .trucker__blog-details-next-inner {
+        background-color: #F8F8F8;
+        padding: 37px 27px;
+        width: 50%;
+
+        @include trucker__screen-1099 {
+            width: 100%;
+            max-width: max-content;
+        }
+
+        @include trucker__screen-991 {
+            width: 50%;
+            max-width: unset;
+        }
+
+        @include trucker__screen-767 {
+            width: 100%;
+        }
+
+        &.trucker__blog-details-next-inner {
+            @include trucker__screen-1099 {
+                margin-top: 20px;
+            }
+
+            @include trucker__screen-991 {
+                margin-top: unset;
+            }
+
+            @include trucker__screen-767 {
+                margin-top: 20px;
+            }
+
+            .trucker__blog-details-tranding-blog-wrapper {
+                justify-content: end;
+
+                .trucker__blog-details-tranding-arrows {
+                    a {
+                        display: block;
+                        text-align: right;
+                    }
+                }
+
+                .trucker__blog-details-tranding-peragraph {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .trucker__blog-details-tranding-blog-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .trucker__blog-details-tranding-blog-info {
+            @include trucker__screen-1199 {
+                width: 100%;
+            }
+
+            .trucker__blog-details-tranding-peragraph {
+                @include trucker__screen-1199 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.trucker__blog-details-under-line-title {
+    position: relative;
+    padding-bottom: 16px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-color: $trucker__green;
+        width: 70px;
+        height: 3px;
+        left: 0;
+        border-radius: 2px;
+    }
+}
+
+.trucker__comment-box-inner {
+    justify-content: space-between;
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid #E4E4E4;
+    margin-top: 30px;
+    padding-bottom: 28px;
+
+    &:last-child {
+        border-bottom: none;
+        margin-top: 0;
+        padding-bottom: 0;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .trucker__comment-date {
+        margin-top: 13px;
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+
+.trucker__comment-left-content {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+
+    @include trucker__screen-575 {
+        display: block;
+    }
+
+    .trucker__comment-left-content-img {
+        width: 50%;
+        max-width: max-content;
+
+        @include trucker__screen-767 {
+            width: 100%;
+        }
+
+        @include trucker__screen-575 {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.trucker__comment-right-content {
+    .trucker__comment-reply-btn {
+        padding: 8px 26px;
+        background-color: #EFEFEF;
+        border-radius: 3px;
+        color: $trucker__green;
+        display: inline-block;
+        text-align: center;
+        transition: $trucker__transition;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+
+        &:hover {
+            background-color: $trucker__secondary-color;
+            color: $trucker__primary-color;
+        }
+    }
+}
+
+.trucker__blog-details-comment-post-wrapper {
+    margin-top: 40px;
+}
+
+.trucker__blog-details-comment-form {
+    margin-top: 40px;
+
+    .trucker__blog-details-comment-flexing-input {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    input {
+        border-radius: 3px;
+        border: 1px solid #DDD;
+        background: #F8F8F8;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        width: 100%;
+        padding: 14px 17px;
+        margin-bottom: 23px;
+        transition: $trucker__transition;
+
+        &::placeholder {
+            color: #B1B1B1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        &:focus-visible {
+            border-color: $trucker__green;
+        }
+    }
+
+    textarea {
+        border-radius: 3px;
+        border: 1px solid #DDD;
+        background: #F8F8F8;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        width: 100%;
+        min-height: 145px;
+        padding: 14px 17px;
+        transition: $trucker__transition;
+
+        &::placeholder {
+            color: #B1B1B1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        &:focus-visible {
+            border-color: $trucker__green;
+        }
+    }
+
+    button[type="submit"] {
+        border: unset;
+        padding: 17px 40px 17px 30px;
+        display: inline-block;
+        margin-top: 22px;
+    }
+}
+
+// End Blog Details Area

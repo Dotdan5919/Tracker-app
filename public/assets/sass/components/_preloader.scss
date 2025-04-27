@@ -1,0 +1,57 @@
+// Start Site Preloader
+#trucker__preloader {
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: -webkit- flex;
+    display: -ms- flex;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+  }
+  .trucker__loader_logo {
+    position: absolute;
+    width: 130px;
+  }
+  #trucker__circle_loader {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #2A9D8F #000 #616161 #062E39;
+    border-radius: 50%;
+    -webkit-animation: spinLoader 2s linear infinite;
+    animation: spinLoader 2s linear infinite;
+  }
+  @-webkit-keyframes spinLoader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spinLoader {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+// End Site Preloader

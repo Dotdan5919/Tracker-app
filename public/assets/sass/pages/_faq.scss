@@ -1,0 +1,129 @@
+// Start Faq Style 1 & including (Home One)
+.trucker__faq-style-1 .trucker__faq-item {
+    background-color: #fff;
+    border: 1px solid #EBEBEB;
+    transition: linear 0.3s ease-in;
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        transition: linear 0.3s;
+    }
+
+    &:hover {
+        h3 {
+            color: $trucker__green;
+        }
+
+        svg {
+            color: $trucker__green;
+        }
+    }
+}
+
+// End Faq Style 1 & including (Home One)
+
+// Start Faq duffelt Style
+.trucker__faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+}
+
+.trucker__faq-answer {
+    display: none;
+    padding: 5px 1rem 20px 1rem;
+}
+
+.trucker__icon svg {
+    width: 20px;
+    height: 20px;
+    color: rgba(6, 46, 57, 1);
+}
+
+.trucker__hidden {
+    display: none;
+}
+
+// End Faq duffelt Style
+
+
+// Start Inner Page Faq
+.trucker__faq-area-inner {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include trucker__screen-991 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .trucker__faq-area-inner-wrapper {
+        .trucker__faq-area-items-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include trucker__screen-991 {
+                display: block;
+            }
+
+            .trucker__faq-area-item-left-site {
+                width: 46%;
+
+                @include trucker__screen-1099 {
+                    width: 55%;
+                }
+
+                @include trucker__screen-991 {
+                    width: 100%;
+                }
+
+                .trucker__faq-item {
+                    .trucker__faq-question {
+                        border-bottom: 1px solid rgba(42, 157, 143, 0.50);
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-bottom: 16px;
+                    }
+
+                    .trucker__faq-answer {
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding-top: 25px;
+                    }
+                }
+            }
+
+            .trucker__faq-area-item-right-site {
+                width: 50%;
+
+                @include trucker__screen-1099 {
+                    width: 40%;
+                }
+
+                @include trucker__screen-991 {
+                    width: 100%;
+                    margin-top: 30px;
+                    max-width: max-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+// End Inner Page Faq

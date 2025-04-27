@@ -1,0 +1,101 @@
+// Start 404 Area
+.trucker__404-area {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include trucker__screen-991 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @include trucker__screen-767 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .trucker__404-img-part {
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .trucker__404-text-content {
+        padding-top: 120px;
+
+        @include trucker__screen-991 {
+            padding-top: 90px;
+        }
+
+        @include trucker__screen-767 {
+            padding-top: 70px;
+        }
+
+        .trucker__input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            justify-content: center;
+
+            @include trucker__screen-650 {
+                display: block;
+            }
+
+            input {
+                border: 1px solid $trucker__green;
+                transition: $trucker__transition;
+                border-radius: 5px;
+                padding: 13.5px 25px;
+                width: 30%;
+
+                @include trucker__screen-1099 {
+                    width: 50%;
+                }
+
+                @include trucker__screen-767 {
+                    width: 70%;
+                }
+
+                @include trucker__screen-650 {
+                    width: 100%;
+                }
+
+                &::placeholder {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #062E39;
+                    line-height: 26px;
+                }
+            }
+
+            button {
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 16.5px 40px;
+
+                @include trucker__screen-650 {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+
+                i {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .trucker__404-sub-title {
+            margin-top: 24px;
+            margin-bottom: 32px;
+
+            @include trucker__screen-767 {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// End 404 Area

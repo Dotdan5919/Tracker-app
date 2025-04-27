@@ -1,0 +1,386 @@
+// Start Mobile Menu
+.trucker__mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100%;
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 10px 10px 42px -1px rgb(65 63 63);
+    transition: right 0.3s ease-in-out;
+}
+
+.trucker__mobile-menu.trucker__active {
+    right: 0;
+}
+
+.trucker__overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 0%;
+    height: 100%;
+    background: rgb(255 255 255 / 52%);
+    padding: 20px;
+    z-index: 999;
+    transition: right 0.7s ease-in-out;
+}
+
+.trucker__overlay:hover {
+    cursor: url(../images/icon/cursor-close.svg), pointer;
+}
+
+.trucker__overlay.trucker__active {
+    right: 0;
+    width: 100%;
+}
+
+.trucker__overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--x) var(--y), transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.trucker__overlay.trucker__animating::before {
+    opacity: 1;
+}
+
+.trucker__menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trucker__logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.trucker__close-btn {
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #062E39;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #062E39;
+
+    i {
+        transition: 0.9s;
+    }
+
+    &:hover {
+        color: #2A9D8F;
+        border-color: #2A9D8F;
+
+        i {
+            rotate: 90deg;
+        }
+    }
+}
+
+.trucker__mobile-menu-search {
+    margin-top: 30px;
+
+    form {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    input[type="text"] {
+        width: 85%;
+        background-color: transparent;
+        border: 1px solid #062E39;
+        padding: 14px 12px;
+        transition: linear 0.3s;
+
+        &:focus {
+            border-color: #2A9D8F;
+        }
+
+        &::placeholder {
+            color: #062E39;
+            font-size: 16px;
+        }
+    }
+
+    button[type="submit"] {
+        padding: 14px 12px;
+        border: 1px solid transparent;
+        background-color: #2A9D8F;
+        color: #fff;
+        width: 15%;
+        display: inline-block;
+        text-align: center;
+        transition: linear 0.4s;
+
+        &:hover {
+            background-color: #062E39;
+        }
+    }
+}
+
+.trucker__mobile-menu-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .trucker__btn-style-1 {
+        display: block;
+        text-align: center;
+    }
+}
+
+.mobile-menu-contact-info {
+    margin-top: 30px;
+
+    .trucker__header-topbar-info {
+        display: block;
+        color: #062E39;
+        font-size: 18px;
+        transition: linear 0.4s;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: #2A9D8F;
+        }
+    }
+}
+
+.mobile-menu-social-media {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 10px;
+
+    a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        background-color: #062E39;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        transition: linear 0.4s;
+
+        &:hover {
+            background-color: #2A9D8F;
+        }
+    }
+}
+
+.trucker__mobile-menu-copyright {
+    margin-top: 30px;
+
+    .trucker__mobile-menu-copyright-text {
+        font-size: 16px;
+        font-weight: 500;
+        color: #062E39;
+
+        &:hover {
+            a {
+                color: #062E39;
+            }
+        }
+
+        a {
+            font-weight: 700;
+            color: #2A9D8F;
+            transition: linear 0.4s;
+        }
+    }
+}
+
+.trucker__nav-list {
+    list-style: none;
+}
+
+.trucker__nav-item {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.trucker__mobile-menu.trucker__active .trucker__nav-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.trucker__nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #062E39;
+    text-decoration: none;
+    padding: 5px 0;
+    font-weight: 500;
+    transition: linear 0.4s;
+
+    &:hover {
+        .trucker__toggle-btn {
+
+            &::after,
+            &::before {
+                background-color: #2A9D8F;
+            }
+        }
+
+        color: #2A9D8F;
+    }
+}
+
+.trucker__toggle-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.trucker__toggle-btn::before,
+.trucker__toggle-btn::after {
+    content: '';
+    position: absolute;
+    background: #062E39;
+    transition: transform 0.4s ease;
+}
+
+.trucker__toggle-btn::before {
+    width: 2px;
+    height: 12px;
+    top: 6px;
+    left: 11px;
+}
+
+.trucker__toggle-btn::after {
+    width: 12px;
+    height: 2px;
+    top: 11px;
+    left: 6px;
+}
+
+.trucker__toggle-btn.trucker__active::before {
+    transform: rotate(90deg);
+}
+
+.trucker__submenu {
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.trucker__submenu.trucker__active {
+    display: block;
+}
+
+.trucker__submenu-item {
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.trucker__submenu.trucker__active .trucker__submenu-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.trucker__submenu-link {
+    color: #062E39;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: linear 0.4s;
+
+    &:hover {
+        color: #2A9D8F;
+    }
+}
+
+.trucker__header-bottom-leftsite-menu-line-shep {
+    cursor: pointer;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.trucker__toggle-btn {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.trucker__toggle-btn::before,
+.trucker__toggle-btn::after {
+    content: '';
+    position: absolute;
+    background: #333;
+    transition: transform 0.3s ease;
+}
+
+.trucker__toggle-btn::before {
+    width: 2px;
+    height: 12px;
+    top: 6px;
+    left: 11px;
+}
+
+.trucker__toggle-btn::after {
+    width: 12px;
+    height: 2px;
+    top: 11px;
+    left: 6px;
+}
+
+.trucker__toggle-btn.trucker__active::before {
+    transform: rotate(90deg);
+}
+
+.trucker__toggle-btn.trucker__active::after {
+    transform: rotate(180deg);
+}
+
+// End Mobile Menu

@@ -1,0 +1,141 @@
+.search-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.search-popup.active {
+    display: flex;
+}
+
+.search-container {
+    width: 80%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.search-popup.active .search-container {
+    opacity: 1;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    border-color: #248277;
+}
+
+.search-submit {
+    background: #248277;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.search-submit:hover {
+    background: #248277;
+}
+
+.close-search {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+    transition: transform 0.2s;
+}
+
+.close-search:hover {
+    transform: scale(1.1);
+}
+
+.close-search svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .search-container {
+        margin-top: 60px;
+    }
+
+    .search-form {
+        padding: 12px;
+    }
+
+    .search-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .search-submit {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .close-search {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .search-popup {
+        padding: 10px;
+    }
+
+    .search-container {
+        margin-top: 40px;
+    }
+
+    .search-form {
+        padding: 8px;
+    }
+
+    .search-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

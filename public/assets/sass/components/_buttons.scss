@@ -1,0 +1,16 @@
+// Start Button Style 1
+.trucker__btn-style-1{
+    background-color: $trucker__green;
+    color: $trucker__primary-color;
+    padding: 20px 37px 20px 28px;
+    border-radius: 4px;
+    transition: $trucker__transition;
+    &:hover{
+        background-color: $trucker__secondary-color;
+    }
+    i{
+        right: -5px;
+        position: relative;
+    }
+}
+// End Button Style 1

@@ -1,0 +1,197 @@
+// Start Header Sticky Menu Animation
+@keyframes trucker__headerStickyAnimations {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+// End Header Sticky Menu Animation
+
+// Start Bounce Y Animation
+@keyframes trucker__bounceY {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(7px) translateX(15px);
+  }
+
+  to {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+// End Bounce Y Animation
+
+// Start Bounce X Animation
+@keyframes trucker__bounceX {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(15px) translateX(7px);
+  }
+
+  to {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes trucker__bounceX1 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(15px) translateY(7px);
+  }
+
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+// End Bounce X Animation
+
+// Start Bounce Scale Animation
+@keyframes scalingAnimation {
+  0% {
+    scale: 100%;
+  }
+
+  33.333% {
+    scale: 0.5;
+  }
+
+  50% {
+    scale: 0.7;
+  }
+
+  66.666% {
+    scale: 0.9;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+@keyframes scalingAnimation1 {
+  0% {
+    scale: 100%;
+  }
+
+  20% {
+    scale: 95%;
+  }
+
+  50% {
+    scale: 101%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+// End Bounce Scale Animation
+
+// Start Roting Animation
+@keyframes trucker__rotingAnimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// End Roting Animation
+
+// Start Margin Padding Animation
+@keyframes trucker__LeftBesiteAnimation {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 5px;
+  }
+
+  75% {
+    left: 8px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+// End Margin Padding Animatino
+
+
+// Start Shine Animaton
+@keyframes trucker__ImgFlowingAnimation {
+  100% {
+    left: 125%;
+  }
+}
+
+// End Shine Animation
+
+
+// Start Banner Sliding Animation
+@keyframes trucker__banner-slide {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+// End Banner Sliding Animation
+
+// Start Text Cicle Roting Animation
+@keyframes trucker__circle-text-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// End Text Circle Roting Animation
+
+// Start Scaling Animation
+@keyframes trucker__scalingAnimation {
+  0% {
+    scale: 100%;
+  }
+
+  33.333% {
+    scale: 0.5;
+  }
+
+  50% {
+    scale: 0.7;
+  }
+
+  66.666% {
+    scale: 0.9;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+// End Scaling Animation

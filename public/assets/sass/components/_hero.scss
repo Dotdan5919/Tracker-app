@@ -1,0 +1,232 @@
+// Start Hero Area Home 1
+.trucker__hero-area {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1047px;
+    z-index: 1;
+    background-color: #E7F8F8;
+
+    &.trucker__breadcrumb-area {
+        height: 452px;
+
+        .trucker__breadcrumb-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .trucker__breadcrumb-menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+                margin-top: 19px;
+
+                a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $trucker__primary-color;
+                    line-height: 28px;
+                    transition: $trucker__transition;
+                    font-family: $trucker__jost-font;
+
+                    &:hover {
+                        color: $trucker__green;
+                    }
+                }
+
+                .trucker__breadcrumb-icon {
+                    color: $trucker__primary-color;
+
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(6, 46, 57, 0.55);
+    }
+
+    .trucker__hero-text-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        @include trucker__screen-575 {
+            top: 35%;
+        }
+
+        .trucker__hero-sub-title {
+            margin-bottom: 36px;
+
+            @include trucker__screen-767 {
+                margin-bottom: 25px;
+            }
+
+            @include trucker__screen-439 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .trucker__hero-title {
+            @include trucker__screen-767 {
+                font-size: 45px;
+                line-height: 55px;
+            }
+
+            @include trucker__screen-439 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .trucker__hero-features-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+        background: rgba(42, 157, 143, 0.65);
+        padding: 45px 55px;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include trucker__screen-1499 {
+            gap: 40px;
+        }
+
+        @include trucker__screen-1299 {
+            gap: 20px;
+        }
+
+        @include trucker__screen-1099 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-content: center;
+            row-gap: 20px;
+        }
+
+        @include trucker__screen-575 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .trucker__hero-features-item {
+            position: relative;
+
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .trucker__hero-features-item-name {
+                text-align: center;
+                margin-top: 14px;
+                white-space: nowrap;
+            }
+        }
+
+        .trucker__hero-item-border-line {
+            background: rgba(224, 224, 224, 0.55);
+            width: 1px;
+            height: 100px;
+
+            @include trucker__screen-1099 {
+                display: none;
+            }
+        }
+    }
+}
+
+// End Hero Area Home 1
+
+// Start Hero Area Home 2
+.trucker__hero-area-home-2 {
+    position: relative;
+    z-index: 1;
+    background-color: #E7F8F8;
+
+    @media (max-width:1920px) {
+        background-color: unset;
+    }
+
+    .trucker__hero-item {
+        height: 950px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        .trucker__hero-item-shep {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            left: 17%;
+
+            @media (max-width:1920px) {
+                left: 6%;
+            }
+
+            @include trucker__screen-1499 {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                top: 45%;
+            }
+
+            @include trucker__screen-575 {
+                display: none;
+            }
+        }
+
+        .trucker__hero-content-wrapper {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+
+            @include trucker__screen-1499 {
+                left: 50%;
+                top: 45%;
+                width: 100%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+            }
+
+            .trucker__hero-sub-title {
+                margin-bottom: 34px;
+            }
+
+            .trucker__hero-title {
+                margin-bottom: 75px;
+
+                @include trucker__screen-767 {
+                    font-size: 45px;
+                    line-height: 55px;
+
+                    br {
+
+                        display: none;
+                    }
+                }
+
+                @include trucker__screen-439 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+// End Hero Area Home 2

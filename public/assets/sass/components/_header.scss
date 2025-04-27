@@ -1,0 +1,450 @@
+// Start Header Area 
+.trucker__header-area-home-1 {
+
+    // Start Header Area Home 1
+    .trucker__header-topbar {
+        background-color: $trucker__secondary-color;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        .trucker__header-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include trucker__screen-650 {
+                display: block;
+            }
+
+            .trucker__topbar-left {
+                display: flex;
+                align-items: center;
+                gap: 87px;
+
+                @include trucker__screen-767 {
+                    gap: 30px;
+                }
+
+                @include trucker__screen-650 {
+                    display: none;
+                }
+
+                .trucker__header-topbar-info {
+                    transition: $trucker__transition;
+
+                    &:hover {
+                        color: $trucker__green;
+                    }
+                }
+            }
+
+            .trucker__topbar-right {
+                display: flex;
+                align-items: center;
+                gap: 68px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    background: rgba(255, 255, 255, 0.20);
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 20.741px;
+
+                    @include trucker__screen-650 {
+                        display: none;
+                    }
+                }
+
+                @include trucker__screen-767 {
+                    gap: 20px;
+                }
+
+                @include trucker__screen-650 {
+                    justify-content: space-between;
+                }
+
+                .trucker__topbar-lan-select {
+                    .nice-select {
+                        background-color: transparent;
+                        border: none;
+                        color: $trucker__primary-color;
+                        font-size: 15px;
+                        font-weight: 500;
+
+                        &::after {
+                            border-bottom: 2px solid #fff;
+                            border-right: 2px solid #fff;
+                            width: 8px;
+                            height: 8px;
+                            top: 45%;
+                        }
+
+                        .list {
+                            color: $trucker__black;
+                            z-index: 99999;
+                        }
+                    }
+                }
+
+                .trucker__topbar-social-media {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    a {
+                        transition: $trucker__transition;
+
+                        &:hover {
+                            color: $trucker__green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .trucker__header-menu {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+
+        &.trucker__header-sticky {
+            position: fixed !important;
+            top: 0;
+            animation: trucker__headerStickyAnimations 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            display: block;
+            width: 100%;
+            z-index: 999;
+            max-width: 100%;
+            box-shadow: 10px 10px 42px -1px rgb(65 63 63 / 15%);
+            background-color: #fff;
+        }
+
+        .trucker__menu-wrapper {
+            background-color: $trucker__primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 22px;
+
+            .trucker__menu__inner {
+                @include trucker__screen-1099 {
+                    display: none;
+                }
+
+                .trucker__menu {
+                    display: flex;
+                    align-items: center;
+                    gap: 69px;
+
+                    @include trucker__screen-1299 {
+                        gap: 45px;
+                    }
+
+                    li {
+                        position: relative;
+
+                        a {
+                            transition: $trucker__transition;
+                            position: relative;
+
+                            &.trucker__submenu-open-here {
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    background-color: $trucker__secondary-color;
+                                    width: 2px;
+                                    height: 10px;
+                                    right: -12px;
+                                    top: 54%;
+                                    transform: translateY(-50%);
+                                    transition: linear 0.3s;
+                                }
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    background-color: $trucker__secondary-color;
+                                    width: 10px;
+                                    height: 2px;
+                                    right: -16px;
+                                    top: 54%;
+                                    transform: translateY(-50%);
+                                    transition: linear 0.3s;
+                                }
+                            }
+
+                            &:hover {
+                                color: $trucker__green;
+                            }
+                        }
+
+                        .trucker__sub-menu {
+                            left: 0;
+                            position: absolute;
+                            transform: translateY(-25px) scaleY(0.8);
+                            top: 135%;
+                            background: $trucker__primary-color;
+                            transition: all ease 0.3s;
+                            opacity: 0;
+                            visibility: hidden;
+                            padding: 15px 20px;
+                            box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.1);
+                            margin: 0px auto;
+                            width: 180px;
+                            right: unset;
+                            display: block;
+                            transform: $trucker__transition;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 0;
+                                height: 2px;
+                                left: 0;
+                                top: 0;
+                                background-color: $trucker__green;
+                                transition: $trucker__transition;
+                            }
+
+                            li {
+                                display: block;
+                                margin-bottom: 5px;
+
+                                a {
+                                    transition: $trucker__transition;
+
+                                    &:hover {
+                                        color: $trucker__green;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .trucker__submenu-open-here {
+                                color: $trucker__green;
+
+                                &::after {
+                                    display: none;
+                                }
+
+                                &::before {
+                                    background-color: $trucker__green;
+                                }
+                            }
+
+                            .trucker__sub-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0px) scaleY(1);
+
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .trucker__header-menu-right {
+                display: flex;
+                align-items: center;
+                gap: 33px;
+
+                .trucker-search-mobile-menu-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 47px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        background: rgba(223, 223, 223, 0.55);
+                        position: absolute;
+                        left: 45%;
+                        transform: translateX(-50%);
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 43px;
+
+                        @include trucker__screen-575 {
+                            display: none;
+                        }
+                    }
+
+                    @include trucker__screen-1299 {
+                        gap: 20px;
+                    }
+
+                    .trucker__search-icon {
+                        transition: $trucker__transition;
+
+                        @include trucker__screen-575 {
+                            display: none;
+                        }
+
+                        &:hover {
+                            color: $trucker__green;
+                        }
+                    }
+
+                    .trucker__mobile-menu-bar {
+                        svg {
+                            path {
+                                transition: $trucker__transition;
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: $trucker__secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .trucker__header-btn {
+                    @include trucker__screen-575 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // End Header Area Home 1
+
+    // Start Header Area Home 2
+    &.trucker__header-area-home-2 {
+        .trucker__header-topbar {
+            .trucker__header-wrapper {
+                .trucker__topbar-left {
+                    @include trucker__screen-650 {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    .trucker__header-topbar-info {
+                        &:hover {
+                            color: $trucker__primary-color;
+                        }
+                    }
+                }
+
+                .trucker__topbar-right {
+                    @include trucker__screen-650 {
+                        display: none;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .trucker__midel-bar {
+            background-color: $trucker__green;
+            padding-top: 25px;
+            padding-bottom: 50px;
+
+            @include trucker__screen-650 {
+                display: none;
+            }
+
+            .trucker__midel-bar-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .trucker__midel-logo {
+                width: 25%;
+
+                @include trucker__screen-1099 {
+                    display: none;
+                }
+            }
+
+            .trucker__midel-contact-info-wrapper {
+                width: 75%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @include trucker__screen-1099 {
+                    width: 100%;
+                }
+
+                .trucker__midel-contact-info-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .trucker__midel-contact-info-icon {
+                        span {
+                            color: $trucker__primary-color;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+            .trucker__midel-bar-line {
+                background: rgba(219, 219, 219, 0.65);
+                width: 1px;
+                height: 45px;
+            }
+        }
+
+        .trucker__header-menu {
+            top: 140px;
+
+            @include trucker__screen-650 {
+                top: unset;
+            }
+
+            &.trucker__header-sticky {
+                top: 0;
+
+                .trucker__menu-wrapper {
+                    .trucker__logo {
+                        display: block;
+                    }
+                }
+            }
+
+            .trucker__menu-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .trucker__logo {
+                    display: none;
+
+                    @include trucker__screen-1099 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // End Header Area Home 2
+
+}
+
+// End Header Area 

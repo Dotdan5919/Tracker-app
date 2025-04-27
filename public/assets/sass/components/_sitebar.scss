@@ -1,0 +1,198 @@
+.trucker__main-sitebar {
+    width: 35%;
+
+    @include trucker__screen-1299 {
+        width: 43%;
+    }
+
+    @include trucker__screen-991 {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .trucker__blog-details-under-line-title {
+        padding-bottom: 10px;
+        margin-bottom: 14px;
+
+        &::after {
+            height: 2px;
+        }
+    }
+
+    .trucker__search-field {
+        padding: 22px;
+        border-radius: 4px;
+        background: #F7F9FB;
+        position: relative;
+
+        input[type="text"] {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: 1px solid #2A9D8F;
+            padding: 14px 20px;
+            width: 100%;
+            transition: $trucker__transition;
+
+            &:focus-visible {
+                border-color: $trucker__secondary-color;
+            }
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 700;
+                color: $trucker__green;
+            }
+        }
+
+        button[type="submit"] {
+            background-color: $trucker__green;
+            border: none;
+            padding: 15px 20px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            position: absolute;
+            right: 20px;
+            transition: $trucker__transition;
+
+            svg {
+                path {
+                    transition: $trucker__transition;
+                    fill: $trucker__primary-color;
+                }
+            }
+
+            &:hover {
+                background-color: $trucker__secondary-color;
+            }
+        }
+    }
+
+    .trucker__category-wrapper {
+        border-radius: 4px;
+        background: #F7F9FB;
+        padding-top: 38px;
+        padding-bottom: 50px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 26px;
+
+        .trucker__category-text {
+            display: block;
+            border-bottom: 1px solid $trucker__black1;
+            position: relative;
+            padding-top: 33px;
+            padding-bottom: 16px;
+            transition: $trucker__transition;
+
+            &:hover {
+                border-color: $trucker__green;
+                color: $trucker__green;
+
+                i {
+                    color: $trucker__green;
+                }
+            }
+
+            i {
+                position: absolute;
+                right: 0;
+                top: 60%;
+                transform: translateY(-50%);
+                transition: $trucker__transition;
+            }
+        }
+    }
+
+    .trucker__sitebar-banner {
+        margin-top: 30px;
+    }
+
+    .trucker__sitebar-short-blog-wrapper {
+        border-radius: 4px;
+        background: #F7F9FB;
+        margin-top: 30px;
+        padding-top: 38px;
+        padding-bottom: 50px;
+        padding-left: 27px;
+        padding-right: 27px;
+
+        .trucker__sitebar-short-blog-inner {
+            margin-top: 28px;
+
+            .trucker__sitebar-short-blog-item {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-bottom: 24px;
+
+                @include trucker__screen-1199 {
+                    img {
+                        width: 25%;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .trucker__sitebar-short-blog-info {
+                    .trucker__sitebar-short-blog-date-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 26px;
+                        margin-bottom: 14px;
+                    }
+
+                    .trucker__sitebar-short-blog-title {
+                        a {
+                            transition: $trucker__transition;
+
+                            &:hover {
+                                color: $trucker__green;
+                            }
+
+                            @include trucker__screen-1099 {
+                                br {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .trucker__sitebar-tags-wrapper {
+        margin-top: 26px;
+        border-radius: 4px;
+        background: #F7F9FB;
+        padding-top: 28px;
+        padding-bottom: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .trucker__sitebar-tag-inner {
+            display: flex;
+            align-items: center;
+            row-gap: 14px;
+            column-gap: 10px;
+            flex-wrap: wrap;
+
+            a {
+                padding: 10px 22px;
+                border-radius: 4px;
+                background: #F7F9FB;
+                border: 1px solid $trucker__green;
+                display: inline-block;
+                transition: $trucker__transition;
+
+                &:hover {
+                    background-color: $trucker__green;
+                    color: $trucker__primary-color;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

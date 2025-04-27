@@ -1,0 +1,47 @@
+/*
+Theme Name: Trucker 
+Author: Website_Stock
+Author URI: https://themeforest.net/user/website_stock
+Discription: Transport Courier & Logistics Html5 Template
+Version: 1.0.0
+Developed By : MD Saiful Islam Tamim
+*/
+
+/************************************** base css **************************************/
+@import "base/variables";
+@import "base/mixin";
+@import "base/reset";
+@import "base/typography";
+@import "base/spacing";
+
+/******************************* theme css **********************************/
+@import "theme/theme-class";
+@import "theme/animations";
+@import "theme/plugincustomize";
+@import "theme/wowcustomanimation";
+
+/******************************** components ******************************/
+@import "components/header";
+@import "components/buttons";
+@import "components/footer";
+@import "components/sitebar";
+@import "components/hero";
+@import "components/_mobile-menu";
+@import "components/search-popup";
+@import "components/preloader";
+
+
+/******************************** Custom Class ******************************/
+@import "custom-class/font-size";
+@import "custom-class/color-palet";
+@import "custom-class/font-weight.scss";
+
+/****************************** page styles ******************************/
+@import "pages/index-1";
+@import "pages/index-2";
+@import "pages/blog-details";
+@import "pages/team-details";
+@import "pages/faq";
+@import "pages/contact";
+@import "pages/404";
+@import "pages/blog-standard";

@@ -18,7 +18,12 @@
           <div class="row mb-3">
             <label for="type" class="col-sm-12 col-form-label">Type</label>
             <div class="col-sm-12">
-              <input type="text" class="form-control" id="type" >
+              <select>
+
+                <option>Packed and Sealed </option>
+                <option> Private </option>
+
+              </select>
             </div>
           </div>
           <div class="row mb-3">

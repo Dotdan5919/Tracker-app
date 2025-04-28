@@ -27,3 +27,4 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/track', [GuestController::class, 'track'])->name('track');
 
 Route::get('/dashboard',[HomeController::class,'view'])->name('dashboard');
+Route::post('/dashboard',[HomeController::class,'store'])->name('generate_id');

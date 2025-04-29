@@ -30,7 +30,7 @@
           <h2 class="trucker__hero-title trucker__white trucker__fs-70 trucker__fw-700 wow img-custom-anim-right">World
             Wide Shipping <br> & Fast Solutions.</h2>
             <div class="trucker__pricing-btn wow img-custom-anim-right btn ">
-                <a href="#" class="trucker__btn-style-1 trucker__item-order-btn"> Track Parcel</a>
+                <a href="/track" class="trucker__btn-style-1 trucker__item-order-btn"> Track Parcel</a>
               </div>
 
         </div>
@@ -152,6 +152,160 @@
   </section>
   <!-- End About Area -->
 
+
+   <!-- Start Faq Area -->
+   <section class="trucker__faq-area-home-1">
+    <div class="trucker__faq-wrapper">
+      <div class="trucker__faq-left">
+        <div class="trucker__faq-left-wrapper">
+          <div class="trucker__faq-title">
+            <h2 class="trucker__fs-47 trucker__fw-700 trucker__deep-sea-blue wow img-custom-anim-left">Frequenlty Asked
+              Questions <br>
+              By Our Clients</h2>
+          </div>
+          <div class="trucker__faq-inner">
+            <div class="trucker__faq-style-1">
+              <div class="trucker__faq-item wow img-custom-anim-left">
+                <div class="trucker__faq-question">
+                  <h3 class="trucker__fs-18 trucker__fw-700 trucker__deep-sea-blue">Is My Technology Allowed on Tech?
+                  </h3>
+                  <span class="trucker__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-icon trucker__hidden"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-off-icon" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                      </path>
+                      <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </span>
+                </div>
+                <div class="trucker__faq-answer" style="display: block;">
+                  <p class="trucker__fs-16 trucker__fw-500 trucker__gray">There are many variations of passages of
+                    available but the Ut <br> elit tellus luctus nec ullamcorper at mattis</p>
+                </div>
+              </div>
+              <div class="trucker__faq-item wow img-custom-anim-right">
+                <div class="trucker__faq-question">
+                  <h3 class="trucker__fs-18 trucker__fw-700 trucker__deep-sea-blue">How Long Does air Freight Take?</h3>
+                  <span class="trucker__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-icon trucker__hidden"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-off-icon" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                      </path>
+                      <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </span>
+                </div>
+                <div class="trucker__faq-answer">
+                  <p class="trucker__fs-16 trucker__fw-500 trucker__gray">There are many variations of passages of
+                    available but the Ut <br> elit tellus luctus nec ullamcorper at mattis</p>
+                </div>
+              </div>
+              <div class="trucker__faq-item wow img-custom-anim-top">
+                <div class="trucker__faq-question">
+                  <h3 class="trucker__fs-18 trucker__fw-700 trucker__deep-sea-blue">What Payment Methods are Supported?
+                  </h3>
+                  <span class="trucker__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-icon trucker__hidden"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-off-icon" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                      </path>
+                      <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </span>
+                </div>
+                <div class="trucker__faq-answer">
+                  <p class="trucker__fs-16 trucker__fw-500 trucker__gray">There are many variations of passages of
+                    available but the Ut <br> elit tellus luctus nec ullamcorper at mattis</p>
+                </div>
+              </div>
+              <div class="trucker__faq-item wow img-custom-anim-left">
+                <div class="trucker__faq-question">
+                  <h3 class="trucker__fs-18 trucker__fw-700 trucker__deep-sea-blue">What Payment Methods are Supported?
+                  </h3>
+                  <span class="trucker__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-icon trucker__hidden"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-off-icon" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                      </path>
+                      <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </span>
+                </div>
+                <div class="trucker__faq-answer">
+                  <p class="trucker__fs-16 trucker__fw-500 trucker__gray">There are many variations of passages of
+                    available but the Ut <br> elit tellus luctus nec ullamcorper at mattis</p>
+                </div>
+              </div>
+              <div class="trucker__faq-item wow img-custom-anim-right">
+                <div class="trucker__faq-question">
+                  <h3 class="trucker__fs-18 trucker__fw-700 trucker__deep-sea-blue">What Payment Methods are Supported?
+                  </h3>
+                  <span class="trucker__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-icon trucker__hidden"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="trucker__eye-off-icon" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                      </path>
+                      <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </span>
+                </div>
+                <div class="trucker__faq-answer">
+                  <p class="trucker__fs-16 trucker__fw-500 trucker__gray">There are many variations of passages of
+                    available but the Ut <br> elit tellus luctus nec ullamcorper at mattis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trucker__faq-right">
+        <img src="assets/images/home-1/faq.jpg" alt="Trucker - Transport Courier & Logistics Html Template"
+          class="wow img-custom-anim-left">
+        <div class="trucker__faq-contact wow img-custom-anim-top">
+          <img src="assets/images/icon/faq-icon-home-1.png" alt="Trucker - Transport Courier & Logistics Html Template"
+            class="trucker__faq-icon">
+          <span class="trucker__support-text trucker__fs-24 trucker__fw-500 trucker__white">27/4 Online Support</span>
+          <a href="tel:91458654528" class="trucker__faq-phone-number trucker__white trucker__fs-24 trucker__fw-500">+91
+            458 654 528</a>
+          <div class="trucker__faq-send-btn-wrapper">
+            <a href="#" class="trucker__btn-style-1 trucker__faq-send-btn">Send Now <i
+                class="fa-light fa-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Faq Area -->
 
 
 

@@ -8,18 +8,18 @@
   <title>D-tracker</title>
 
   <!--Start css files-->
-  <link rel="stylesheet preload" href="assets/css/font-awesome-pro.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/bootstrap.min.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/swiper.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/nice-select.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/animate.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/odometer-theme-default.min.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/magnific-popup.css" as="style">
-  <link rel="stylesheet preload" href="assets/css/style.css" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/font-awesome-pro.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/bootstrap.min.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/swiper.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/nice-select.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/animate.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/odometer-theme-default.min.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/magnific-popup.css')}}" as="style">
+  <link rel="stylesheet preload" href="{{asset('assets/css/style.css')}}" as="style">
   <!-- End Css File -->
 
   <!-- Start Favicon-->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.png')}}">
   <!-- End Favicon -->
 </head>
 
@@ -28,7 +28,7 @@
   <!-- Start Site Preloader -->
   <div id="trucker__preloader">
     <div id="trucker__circle_loader"></div>
-    <div class="trucker__loader_logo"><img src="assets/images/logo/logo.svg" alt="Preload"></div>
+    <div class="trucker__loader_logo"><img src="{{asset('assets/images/logo/logo.svg')}}" alt="Preload"></div>
   </div>
   <!-- End Site Preloader -->
 
@@ -56,10 +56,9 @@
           <div class="trucker__topbar-right">
             <div class="trucker__topbar-lan-select">
               <select class="trucker__language-selection">
-                <option value="bangla">Bangla</option>
+               
                 <option value="english">English</option>
-                <option value="japanis">Japanis</option>
-                <option value="arabic">Arabic</option>
+               
               </select>
             </div>
             <div class="trucker__topbar-social-media">
@@ -76,8 +75,8 @@
       <div class="trucker__container">
         <div class="trucker__menu-wrapper">
           <div class="trucker__logo">
-            <a href="index.html">
-              <img src="assets/images/logo/logo.svg" alt="Trucker - Transport Courier & Logistics Html Template">
+            <a href="/">
+              <img src="{{asset('assets/images/logo/logo.svg')}}" alt="Trucker - Transport Courier & Logistics Html Template">
             </a>
           </div>
           <div class="trucker__menu__inner">
@@ -119,7 +118,7 @@
               </a>
             </div>
             <div class="trucker__header-btn">
-              <a href="#" class="trucker__btn-style-1">Track Order <i class="fa-light fa-arrow-up-right"></i></a>
+              <a href="/track" class="trucker__btn-style-1">Track Order <i class="fa-light fa-arrow-up-right"></i></a>
             </div>
           </div>
         </div>
@@ -133,12 +132,12 @@
 
   
   <!-- Star Footer Area -->
-  <section class="trucker__footer-area-home-2" data-background="assets/images/inner/footer-bg.png">
+  <section class="trucker__footer-area-home-2" data-background="{{asset('assets/images/inner/footer-bg.png')}}">
     <div class="trucker__container">
       <div class="trucker__footer-wrapper">
         <div class="trucker__footer-logo wow fadeInLeft">
           <a href="#" class="trucker__footer-logo">
-            <img src="assets/images/logo/logo-2.svg" alt="Trucker - Transport Courier & Logistics Html Template">
+            <img src="{{asset('assets/images/logo/logo-2.svg')}}" alt="Trucker - Transport Courier & Logistics Html Template">
           </a>
           <p class="trucker__footer-logo-bottom-text">The world’s first and largest digital market <br> for crypto
             collectibles and non-fungible <br> (NFTs). Buy</p>
@@ -327,7 +326,7 @@
       </div>
       <div class="trucker__footer-info-hilight wow fadeInUp">
         <div class="trucker__footer-info-left">
-          <img src="assets/images/icon/footer-icon-1.png" alt="Trucker - Transport Courier & Logistics Html Template"
+          <img src="{{asset('assets/images/icon/footer-icon-1.png')}}" alt="Trucker - Transport Courier & Logistics Html Template"
             class="trucker__footer-icon-1">
           <div class="trucker__footer-info-email-text-wrapper">
             <span class="trucker__footer-info-icon">
@@ -383,8 +382,8 @@
         </div>
       </div>
       <div class="trucker__footer-copyright-text-wrapper wow fadeInRight">
-        <p class="trucker__footer-copyright-text"> <span class="trucker__copyright-text-highlight">© 2023</span>
-          website_stock . All Rights Reserved.</p>
+        <p class="trucker__footer-copyright-text"> <span class="trucker__copyright-text-highlight">© 2025</span>
+         Weware. All Rights Reserved.</p>
         <div class="trucker__footer-copyright-icons">
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
           <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -404,8 +403,9 @@
   <div class="trucker__mobile-menu">
     <div class="trucker__menu-header">
       <div class="trucker__logo">
-        <a href="index.html">
-          <img src="assets/images/logo/logo.svg" alt="Trucker - Transport Courier & Logistics Html Template">
+       
+        <a href="/">
+          <img src="{{asset('assets/images/logo/logo.svg')}}" alt="Trucker - Transport Courier & Logistics Html Template">
         </a>
       </div>
       <button class="trucker__close-btn"><i class="fa-sharp fa-light fa-xmark"></i></button>
@@ -419,21 +419,22 @@
     </div>
 
     <div class="trucker__mobile-menu-btn">
-      <a href="#" class="trucker__btn-style-1">Track Order <i class="fa-light fa-arrow-up-right"></i></a>
+      <a href="/track" class="trucker__btn-style-1">Track Order <i class="fa-light fa-arrow-up-right"></i></a>
     </div>
 
     <nav>
       <ul class="trucker__nav-list">
         <li class="trucker__nav-item">
-          <a href="#" class="trucker__nav-link" onclick="return false;">
+          <a href="/" class="trucker__nav-link" onclick="return true;">
             Home
           </a>
         
         </li>
         <li class="trucker__nav-item">
-          <a href="about.html" class="trucker__nav-link">About</a>
+          <a href="#" class="trucker__nav-link">About</a>
         </li>
        
+        
 
         @if (Route::has('login'))
             
@@ -441,7 +442,7 @@
            
      
         <li class="trucker__nav-item">
-          <a href="{{route('dashboard')}}" class="trucker__nav-link" onclick="return false;">
+          <a href="{{route('dashboard')}}" class="trucker__nav-link"  >
             Dashboard
           </a>
           
@@ -451,7 +452,7 @@
         @endif
        
         <li class="trucker__nav-item">
-          <a href="contact.html" class="trucker__nav-link">Contact</a>
+          <a href="#" class="trucker__nav-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -497,16 +498,16 @@
 
 
   <!--Start Js Files-->
-  <script defer src="assets/js/jquery.min.js"></script>
-  <script defer src="assets/js/bootstrap.min.js"></script>
-  <script defer src="assets/js/wow.js"></script>
-  <script defer src="assets/js/magnific-popup.js"></script>
-  <script defer src="assets/js/nice-select.js"></script>
-  <script defer src="assets/js/swiper.js"></script>
-  <script defer src="assets/js/odometer.min.js"></script>
-  <script defer src="assets/js/jarallax.min.js"></script>
-  <script defer src="assets/js/imagesloaded-pkgd.js"></script>
-  <script defer src="assets/js/script.js"></script>
+  <script defer src="{{asset('assets/js/jquery.min.js')}}"></script>
+  <script defer src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+  <script defer src="{{asset('assets/js/wow.js')}}"></script>
+  <script defer src="{{asset('assets/js/magnific-popup.js')}}"></script>
+  <script defer src="{{asset('assets/js/nice-select.js')}}"></script>
+  <script defer src="{{asset('assets/js/swiper.js')}}"></script>
+  <script defer src="{{asset('assets/js/odometer.min.js')}}"></script>
+  <script defer src="{{asset('assets/js/jarallax.min.js')}}"></script>
+  <script defer src="{{asset('assets/js/imagesloaded-pkgd.js')}}"></script>
+  <script defer src="{{asset('assets/js/script.js')}}"></script>
 
 
   {{-- raw js  --}}

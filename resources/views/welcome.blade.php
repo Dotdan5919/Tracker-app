@@ -131,20 +131,9 @@
             </li>
           </ul>
           <div class="trucker__about-writer-info-wrapper">
-            <div class="trucker__about-writer-info-inner">
-              <img src="assets/images/home-1/home-1-about-content-writer.png"
-                alt="Trucker - Transport Courier & Logistics Html Template">
-              <div class="trucker__about-writer-info-name-regi">
-                <h5 class="trucker__about-writer-info-name trucker__fs-20 trucker__fw-700 trucker__deep-sea-blue">Kate
-                  Attjamin</h5>
-                <p class="trucker__about-writer-info-regi trucker__fs-16 trucker__fw-400 trucker__gray">Founder &
-                  Director</p>
-              </div>
-            </div>
-            <div class="trucker__about-writer-signeture">
-              <img src="assets/images/home-1/home-1-about-content-writer-sign.png"
-                alt="Trucker - Transport Courier & Logistics Html Template">
-            </div>
+          
+
+            
           </div>
         </div>
       </div>

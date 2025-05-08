@@ -483,28 +483,28 @@
           $('.trucker__mobile-menu, .trucker__overlay').removeClass('trucker__active');
         });
 
-        // $('.trucker__nav-link').click(function (e) {
-        //   e.preventDefault();
+        $('.trucker__nav-link').click(function (e) {
+          e.preventDefault();
 
-        //   var $submenu = $(this).next('.trucker__submenu');
-        //   var $toggleBtn = $(this).find('.trucker__toggle-btn');
+          var $submenu = $(this).next('.trucker__submenu');
+          var $toggleBtn = $(this).find('.trucker__toggle-btn');
 
-        //   // Close all other submenus
-        //   $('.trucker__submenu').not($submenu).slideUp().removeClass('trucker__active');
-        //   $('.trucker__toggle-btn').not($toggleBtn).removeClass('trucker__active');
+          // Close all other submenus
+          $('.trucker__submenu').not($submenu).slideUp().removeClass('trucker__active');
+          $('.trucker__toggle-btn').not($toggleBtn).removeClass('trucker__active');
 
-        //   // Toggle current submenu
-        //   $submenu.slideToggle(function () {
-        //     if ($submenu.is(':visible')) {
-        //       $submenu.addClass('trucker__active');
-        //       $toggleBtn.addClass('trucker__active');
-        //       animateSubmenuItems($submenu);
-        //     } else {
-        //       $submenu.removeClass('trucker__active');
-        //       $toggleBtn.removeClass('trucker__active');
-        //     }
-        //   });
-        // });
+          // Toggle current submenu
+          $submenu.slideToggle(function () {
+            if ($submenu.is(':visible')) {
+              $submenu.addClass('trucker__active');
+              $toggleBtn.addClass('trucker__active');
+              animateSubmenuItems($submenu);
+            } else {
+              $submenu.removeClass('trucker__active');
+              $toggleBtn.removeClass('trucker__active');
+            }
+          });
+        });
 
         function animateNavItems() {
           $('.trucker__nav-item').each(function (index) {

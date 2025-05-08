@@ -7241,4 +7241,47 @@ picture.jarallax-img img {
   border-color: transparent;
 }
 
+
+
+.table-hover:hover {
+
+background-color:#2A9D8F;
+color:white;
+
+}
+.mytext-color{
+  
+  
+  color:#248277
+  
+}
+
+.mybg-color{
+  
+  background-color:#248277;
+
+}
+
+
+.modal-footer .mybg-color:hover{
+
+background-color:#062E39;
+
+}
+
+.dashboard-display:hover{
+
+background-color: #2A9D8F;
+color:white;  
+
+
+}
+
+
+.active-item{
+
+  background-color: #2A9D8F;
+  color:white;  
+
+}
 /*# sourceMappingURL=style.css.map */

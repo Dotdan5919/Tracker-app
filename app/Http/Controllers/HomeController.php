@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Session;
 use App\Models\Item;
 
 
@@ -93,7 +93,7 @@ class HomeController extends Controller
 
         $item->save();
 
-        $items=Item::paginate(7);
+        $items=Item::where('item_id','=',$id)->get();
  
 
 $delivered=Item::where('status','=','Delivered')->count();
@@ -147,32 +147,33 @@ return view('dashboard')->with('items',$items)
 
         $search_type=request('search_type');
 
-        session()->put('search', $search); 
-        session()->put('search_type', $search_type); 
 
-        // session([
-        //     'search' => $search,
-        //     'search_type' => $search_type,
-        // ]);
+       
 
-        $delivered=Item::where('status','=','Delivered')->count();
-        $Canceled=Item::where('status','=','Canceled')->count();
-        $Shipped=Item::where('status','=','Shipped')->count();
+    // Store data in the session
+   
 
-       if($search_type=='by_keyword')
-       {
+    // Retrieve data from the session
+    
+    $delivered=Item::where('status','=','Delivered')->count();
+    $Canceled=Item::where('status','=','Canceled')->count();
+    $Shipped=Item::where('status','=','Shipped')->count();
 
-
-    //     $items = YourModel::where('item_id', 'LIKE', '%' . $searchTerm . '%')
-    // ->orWhere('name_of_item', 'LIKE', '%' . $searchTerm . '%')
-    // ->orWhere('type', 'LIKE', '%' . $searchTerm . '%')
-    // // ... (add more orWhere clauses)
+    if($search_type=='by_keyword')
+    {
+        
+        
+        //     $items = YourModel::where('item_id', 'LIKE', '%' . $searchTerm . '%')
+        // ->orWhere('name_of_item', 'LIKE', '%' . $searchTerm . '%')
+        // ->orWhere('type', 'LIKE', '%' . $searchTerm . '%')
+        // // ... (add more orWhere clauses)
     // ->paginate(10)
     
     
     $item=Item::where('item_id','LIKE','%'.$search.'%')
-                    ->orWhere('name_of_item','LIKE','%'.$search.'%')
+    ->orWhere('name_of_item','LIKE','%'.$search.'%')
                     ->orWhere('sender','LIKE','%'.$search.'%')
+                    ->orWhere('message','LIKE','%'.$search.'%')
                     ->orWhere('parcel_destination','LIKE','%'.$search.'%')
                     ->orWhere('package_origin','LIKE','%'.$search.'%')
                     ->orWhere('receiver','LIKE','%'.$search.'%')
@@ -180,18 +181,20 @@ return view('dashboard')->with('items',$items)
                     ->orWhere('status','LIKE','%'.$search.'%')
                     ->paginate(7);
         
-     
+                  
 
+                    $session=session();
+                    $session->put('search', $search); 
+                    $session->put('search_type', $search_type); 
 
         return view('dashboard')->with('items',$item)
                                 ->with('delivered',$delivered)
                                 ->with('shipped',$Shipped)
                                 ->with('canceled',$Canceled)
                                 ->with('item_name',"Search results");
-
-                               
+      
        }
-
+       
        else if($search_type=='by_id')
        {
 
@@ -214,7 +217,7 @@ return view('dashboard')->with('items',$items)
 
        else{
 
-        $search=session()->get('search');
+        $search=Session::get('search');
 
         $item=Item::where('item_id','LIKE','%'.$search.'%')
                     ->orWhere('name_of_item','LIKE','%'.$search.'%')
@@ -223,16 +226,23 @@ return view('dashboard')->with('items',$items)
                     ->orWhere('package_origin','LIKE','%'.$search.'%')
                     ->orWhere('receiver','LIKE','%'.$search.'%')
                     ->orWhere('status','LIKE','%'.$search.'%')
+                    ->orWhere('message','LIKE','%'.$search.'%')
+
                     ->orWhere('active_current_location','LIKE','%'.$search.'%')
                     ->paginate(7);
 
 
-        // return view('dashboard')->with('items',$item)
-        //                         ->with('delivered',$delivered)
-        //                         ->with('shipped',$Shipped)
-        //                         ->with('canceled',$Canceled)
-        //                         ->with('item_name',"Search results");
-echo session()->get('search');
+        return view('dashboard')->with('items',$item)
+                                ->with('delivered',$delivered)
+                                ->with('shipped',$Shipped)
+                                ->with('canceled',$Canceled)
+                                ->with('item_name',"Search results");
+
+        
+                             
+       
+
+
 
        }
 
@@ -240,5 +250,46 @@ echo session()->get('search');
 
 
     }
+
+
+    public function update()
+    {
+
+        $status=request('status');
+        $active_location=request('active_current_location');
+        $id=request('id');
+
+        $items=Item::where('id','=',$id)->first();
+        $items->status=$status;
+        $items->active_current_location=$active_location;
+        $items->update();
+
+        $items=Item::where('id','=',$id)->get(); //this is for the view
+
+       
+        
+        $delivered=Item::where('status','=','Delivered')->count();
+        $Canceled=Item::where('status','=','Canceled')->count();
+        $Shipped=Item::where('status','=','Shipped')->count();
+
+       
+
+        return view('dashboard')->with('items',$items)
+                                ->with('delivered',$delivered)
+                                ->with('shipped',$Shipped)
+                                ->with('canceled',$Canceled)
+                                ->with('item_name','updated');
+
+
+
+
+        // return redirect->back();
+    }
+
+
+
+
+
+
 }
 

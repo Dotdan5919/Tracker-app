@@ -28,7 +28,7 @@
   <!-- Start Site Preloader -->
   <div id="trucker__preloader">
     <div id="trucker__circle_loader"></div>
-    <div class="trucker__loader_logo"><img src="{{asset('assets/images/logo/logo.svg')}}" alt="Preload"></div>
+    <div class="trucker__loader_logo"><img src="{{asset('assets/images/logo/logo-preloader.png')}}" alt="Preload"></div>
   </div>
   <!-- End Site Preloader -->
 
@@ -76,32 +76,43 @@
         <div class="trucker__menu-wrapper">
           <div class="trucker__logo">
             <a href="/">
-              <img src="{{asset('assets/images/logo/logo.svg')}}" alt="Trucker - Transport Courier & Logistics Html Template">
+              <img src="{{asset('assets/images/logo/logo.png')}}" alt="Trucker - Transport Courier & Logistics Html Template"  style="width: 170px">
             </a>
           </div>
           <div class="trucker__menu__inner">
             <nav>
               <ul class="trucker__menu">
-                <li><a href="#"
+                <li><a href="/"
                     class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue ">Home</a>
                  
                 </li>
-                <li><a href="" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue">About</a></li>
+                <li><a href="{{route('about')}}" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue">About</a></li>
              
             
-                <li><a href="#" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue">Contact</a>
+                <li><a href="/contact" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue">Contact</a>
                 </li>
-                @if (Route::has('login'))
+                @if (Route::has('admin-login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                    <li><a href="{{route('dashboard')}}" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue">Dashboard</a>
-                      
+             
+                      <li><a href="#"
+                        class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue trucker__submenu-open-here">Admin</a>
+                      <ul class="trucker__sub-menu">
+                        <li><a href="/dashboard" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue">Dashboard
+                            </a></li>
+                        <li><a href="/logout" class="trucker__fs-16 trucker__fw-500 trucker__deep-sea-blue"
+                          onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                      </ul>
+                    </li>
                     @endauth
                 </div>
             @endif
                 
                 
-                </li>
+                
               </ul>
             </nav>
           </div>
@@ -137,10 +148,9 @@
       <div class="trucker__footer-wrapper">
         <div class="trucker__footer-logo wow fadeInLeft">
           <a href="#" class="trucker__footer-logo">
-            <img src="{{asset('assets/images/logo/logo-2.svg')}}" alt="Trucker - Transport Courier & Logistics Html Template">
+            <img src="{{asset('assets/images/logo/logo-white.png')}}" alt="Trucker - Transport Courier & Logistics Html Template" style="width: 170px">
           </a>
-          <p class="trucker__footer-logo-bottom-text">The world’s first and largest digital market <br> for crypto
-            collectibles and non-fungible <br> (NFTs). Buy</p>
+          <p class="trucker__footer-logo-bottom-text">Secure and speedy delivery solutions, tailored to your needs.<br> Connecting businesses and individuals with dependable service.</p>
           <div class="trucker__footer-location">
             <span class="trucker__footer-location-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
@@ -259,7 +269,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/contact">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path
                       d="M9.67468 1.39483L10.0296 8.02683C10.0398 8.21614 9.98018 8.39852 9.86206 8.54077C9.74381 8.68317 9.58184 8.76746 9.40556 8.7784L8.84455 8.81292C8.6684 8.82386 8.4983 8.75997 8.36571 8.63311C8.23319 8.50632 8.1504 8.32823 8.14035 8.13913L7.92912 4.26615L2.53255 10.7651C2.28924 11.0582 1.88328 11.0852 1.61024 10.824L1.19085 10.4227C0.917809 10.1614 0.874815 9.70482 1.11813 9.4118L6.53397 2.88959L2.89565 3.12075C2.71935 3.13155 2.55263 3.0709 2.42005 2.94404C2.2876 2.81732 2.21062 2.64478 2.2005 2.45562L2.16916 1.85434C2.15903 1.66502 2.21893 1.48307 2.33718 1.34067C2.45529 1.19842 2.61755 1.11427 2.79391 1.1034L8.97209 0.722437C9.14894 0.711606 9.31963 0.775904 9.45203 0.903302C9.58547 1.03041 9.66466 1.20506 9.67468 1.39483Z"
@@ -405,7 +415,7 @@
       <div class="trucker__logo">
        
         <a href="/">
-          <img src="{{asset('assets/images/logo/logo.svg')}}" alt="Trucker - Transport Courier & Logistics Html Template">
+          <img src="{{asset('assets/images/logo/logo.png')}}" alt="Trucker - Transport Courier & Logistics Html Template" style="width:170px">
         </a>
       </div>
       <button class="trucker__close-btn"><i class="fa-sharp fa-light fa-xmark"></i></button>
@@ -425,34 +435,46 @@
     <nav>
       <ul class="trucker__nav-list">
         <li class="trucker__nav-item">
-          <a href="/" class="trucker__nav-link" onclick="return true;">
+          <a href="/" class="trucker__submenu-link" onclick="return true;">
             Home
           </a>
         
         </li>
         <li class="trucker__nav-item">
-          <a href="#" class="trucker__nav-link">About</a>
+          <a href="{{route('about')}}" class="trucker__submenu-link">About</a>
         </li>
        
         
 
-        @if (Route::has('login'))
+        @if (Route::has('admin-login'))
             
        @auth
            
      
+      
+
         <li class="trucker__nav-item">
-          <a href="{{route('dashboard')}}" class="trucker__nav-link"  >
-            Dashboard
+          <a href="#" class="trucker__nav-link" onclick="return false;">
+            Admin
+            <span class="trucker__toggle-btn"></span>
           </a>
-          
+          <ul class="trucker__submenu">
+            <li class="trucker__submenu-item"><a href="{{route('dashboard')}}" class="trucker__submenu-link">Dashboard</a></li>
+            <li class="trucker__submenu-item"><a href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"  class="trucker__submenu-link">Logout</a>
+            </li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+          </form>
+          </ul>
         </li>
 
         @endauth
         @endif
        
         <li class="trucker__nav-item">
-          <a href="#" class="trucker__nav-link">Contact</a>
+          <a href="/contact" class="trucker__submenu-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -508,6 +530,11 @@
   <script defer src="{{asset('assets/js/jarallax.min.js')}}"></script>
   <script defer src="{{asset('assets/js/imagesloaded-pkgd.js')}}"></script>
   <script defer src="{{asset('assets/js/script.js')}}"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
   {{-- raw js  --}}
@@ -522,6 +549,15 @@
       // You can format the date here if needed
     });
     </script>
+
+
+<script>
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+</script>
   <!-- End Js File -->
 </body>
 

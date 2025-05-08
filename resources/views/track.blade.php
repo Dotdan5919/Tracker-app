@@ -97,22 +97,19 @@
             </div>
             <div class="row mb-2 pt-2">
               <div class="col-6">
-                <p class="card-text small font-medium text-muted">Sender Address</p>
-                <p class="card-text small">{{$item->sender_address}}</p>
+                <p class="card-text small font-medium text-muted">Parcel Destination</p>
+                <p class="card-text small">{{$item->parcel_destination}}</p>
               </div>
               <div class="col-6 text-right">
-                <p class="card-text small font-medium text-muted">Parcel Dest.</p>
-                <p class="card-text small">{{$item->parcel_description}}</p>
+                <p class="card-text small font-medium text-muted">Receiver</p>
+                <p class="card-text small">{{$item->receiver}}</p>
+                
               </div>
             </div>
             <div class="row mb-2 pt-2">
               <div class="col-6">
-                <p class="card-text small font-medium text-muted">Receiver</p>
-                <p class="card-text small">{{$item->receiver}}</p>
               </div>
               <div class="col-6 text-right">
-                <p class="card-text small font-medium text-muted">Receiver Address</p>
-                <p class="card-text small">{{$item->receiver_address}}</p>
               </div>
             </div>
         
@@ -122,8 +119,8 @@
                 <p class="card-text small"></p>
               </div>
               <div class="col-6 text-right">
-                <p class="card-text small font-medium text-muted">Active Current Location</p>
-                <p class="card-text small">{{$item->active_current_location}}</p>
+                <p class="card-text small font-medium text-muted">Parcel Description</p>
+                <p class="card-text small">{{$item->message}}</p>
               </div>
             </div>
             <div class="mt-4">
@@ -131,8 +128,8 @@
               <div class="border border-secondary rounded p-3 bg-light text-sm">{{$item->status}}</div>
             </div>
             <div>
-              <h3 class="card-title h6 small font-medium text-muted mb-2">Message</h3>
-              <div class="border border-secondary rounded p-3 bg-light text-sm min-vh-25">{{$item->message}}</div>
+              <h3 class="card-title h6 small font-medium text-muted my-2">Current Location</h3>
+              <div class="border border-secondary rounded p-3 bg-light text-sm min-vh-25">{{$item->active_current_location}}</div>
             </div>
           </div>
           <div class="card-footer bg-light text-right">
